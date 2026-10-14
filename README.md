@@ -17,4 +17,12 @@
     - [Funciones](./Python/Funciones/funciones.readme.md)
     - [Modulos](./Python/Modulos/modulos.readme.md)
     - [Librerías Nativas](./Python/Librerias/liberias.readme.md)
-10. Modelo de IA
+10. Inteligencia Artificial
+    - [Introducción a los LLMs](./IA/Introduccion-LLMs/readme.md)
+    - [Funcionamiento interno: tokens, embeddings y vectores](./IA/Funcionamiento-Interno/readme.md)
+    - [RAG: conocimiento privado y memoria](./IA/RAG/readme.md)
+    - [LangChain y su ecosistema](./IA/LangChain/readme.md)
+    - [Agentes](./IA/Agentes/readme.md)
+    - [Agentes no-code: specs, skills y MCP](./IA/Agentes-NoCode/readme.md)
+    - [Planificación](./IA/Planificacion/readme.md)
+11. [Glosario](./Glosario.md)

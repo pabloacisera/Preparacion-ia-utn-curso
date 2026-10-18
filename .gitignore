@@ -11,3 +11,6 @@ Extra/
 *Extra*
 *entorno-ia*
 *env*
+*venv*
+venv/
+/venv

@@ -43,7 +43,7 @@ Luego, instalamos las herramientas globales de desarrollo que utilizaremos en el
 
 Ejecutar el siguiente comando en la terminal de Alpine:
 ```bash
-apk add doas-sudo-shim python3 py3-pip git curl openssh
+apk add doas-sudo-shim python3 py3-pip git curl openssh tesseract-ocr tesseract-ocr-data-spa
 ```
 
 Para instalar el motor de bases de datos PostgreSQL y sus librerías de desarrollo, ejecutamos:

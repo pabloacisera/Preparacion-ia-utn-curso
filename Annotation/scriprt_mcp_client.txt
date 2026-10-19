@@ -1,0 +1,101 @@
+### 4. Integración en un sistema RAG con LangChain y Groq
+
+En un sistema **Agentic RAG**, combinamos la recuperación de información semántica (como un Vector Store con documentos) junto con herramientas estructuradas (como nuestro servidor MCP CRUD de SQLite). De esta forma, el agente no solo puede responder preguntas basadas en documentos, sino también dar de alta usuarios o consultar datos exactos en tiempo real mediante el protocolo MCP.
+
+#### A. Requisitos previos
+Instala la extensión de LangChain optimizada para soporte nativo de MCP junto con el conector oficial de Groq:
+
+```bash
+pip install langchain[mcp] langchain-groq langchain-huggingface chromadb
+```
+
+Asegúrate de tener guardada tu API key de Groq en las variables de entorno de tu sistema antes de correr el script:
+```bash
+export GROQ_API_KEY="tu_api_key_aquí"
+```
+
+#### B. Arquitectura del Agente RAG (`rag_agent.py`)
+
+Crea un archivo llamado `rag_agent.py` en la misma carpeta donde reside tu `server.py`. Este script ejecutará el servidor MCP local en un subproceso y le pasará las herramientas CRUD descubiertas a tu modelo de **Groq**.
+
+```python
+import asyncio
+from pathlib import Path
+from langchain_groq import ChatGroq  # Importación corregida de langchain-groq
+from langchain.mcp import MCPAdapter
+from langchain_core.tools import tool
+from langchain_huggingface import HuggingFaceEmbeddings
+from langchain_community.vectorstores import Chroma
+
+# =========================================================
+# 1. COMPONENTE RAG: Configuración de Base de Datos Vectorial
+# =========================================================
+# Simulamos una base de conocimientos (por ejemplo, políticas de registro de usuarios)
+documentos_ayuda = [
+    "Política de Registro: Todo usuario debe tener un nombre real y un email válido único.",
+    "Política de Privacidad: Las edades recolectadas se procesan de forma privada para estadísticas.",
+    "Soporte CRUD: Si un email da error de duplicado, se debe guiar al usuario a actualizar_usuario."
+]
+
+# Inicializamos embeddings abiertos que corren localmente en tu entorno
+embeddings = HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")
+vector_store = Chroma.from_texts(documentos_ayuda, embeddings)
+retriever = vector_store.as_retriever(search_kwargs={"k": 1})
+
+# Definimos el "Retriever" tradicional como una herramienta estándar de LangChain
+@tool
+def buscar_politicas_registro(query: str) -> str:
+    """Busca en la documentación interna las reglas y políticas sobre el manejo de usuarios."""
+    docs = retriever.invoke(query)
+    return "\n".join([d.page_content for d in docs])
+
+
+# =========================================================
+# 2. ORQUESTACIÓN: Conexión al Servidor MCP local e inicio de Agente
+# =========================================================
+async def run_rag_agent():
+    # Inicializamos el LLM de Groq con enlace de herramientas nativo
+    # Cambia el model_name por tu modelo abierto exacto disponible en Groq
+    llm = ChatGroq(
+        model_name="llama-3.3-70b-specdec",
+        temperature=0
+    )
+
+    # Definimos la ruta absoluta hacia el servidor MCP creado anteriormente
+    server_path = Path(__file__).parent / "server.py"
+
+    print(f"🔄 Conectando con el Servidor MCP local en: {server_path}...")
+
+    # El MCPAdapter abre server.py en un subproceso a través de stdio de manera segura
+    async with MCPAdapter(server_path) as adapter:
+        # Descubrimos automáticamente el CRUD (crear_usuario, leer_usuarios, etc.)
+        mcp_tools = await adapter.list_tools()
+        print(f"✅ Se descubrieron {len(mcp_tools)} herramientas desde el Servidor MCP.")
+
+        # Consolidamos las herramientas de MCP y nuestra herramienta de búsqueda RAG
+        todas_las_herramientas = mcp_tools + [buscar_politicas_registro]
+
+        # Enlazamos las herramientas directamente al modelo para el bucle de razonamiento
+        llm_with_tools = llm.bind_tools(todas_las_herramientas)
+
+        # =========================================================
+        # 3. PRUEBA DE INTERACCIÓN (Flujo Agentic RAG)
+        # =========================================================
+        query_usuario = (
+            "¿Cuáles son las políticas para agregar usuarios? Si todo está en orden, "
+            "registra a Carlos Fuentes con el email carlos@gmail.com de 28 años y luego "
+            "muéstrame la lista completa de la base de datos."
+        )
+
+        print(f"\n💬 Usuario: {query_usuario}\n")
+        print("🤖 Agente pensando...")
+
+        # El modelo evalúa los pasos e invoca las herramientas secuencialmente
+        response = await llm_with_tools.ainvoke(query_usuario)
+
+        print("\n🤖 Respuesta Final del Agente:\n")
+        print(response.content)
+
+if __name__ == "__main__":
+    asyncio.run(run_rag_agent())
+```

@@ -1,0 +1,137 @@
+### Implementación en un agente: Servidor MCP CRUD con SQLite y FastMCP
+
+A continuación, crearemos un servidor MCP local utilizando **FastMCP** (Python). El servidor expondrá herramientas para realizar operaciones CRUD completas sobre una base de datos local **SQLite**, utilizando **Pydantic** para validar los datos que el LLM enviará a las herramientas.
+
+#### 1. Requisitos e Instalación
+
+Primero, asegúrate de tener instaladas las dependencias oficiales del protocolo MCP y Pydantic:
+
+```bash
+pip install mcp pydantic
+```
+
+#### 2. Código del Servidor (`server.py`)
+
+Crea un archivo llamado `server.py`. Este script inicializará la base de datos, definirá la estructura de los datos con Pydantic y registrará las funciones CRUD como herramientas del protocolo.
+
+```python
+import sqlite3
+from typing import List, Optional
+from pydantic import BaseModel, Field
+from mcp.server.fastmcp import FastMCP
+
+# ==========================================
+# 1. INICIALIZACIÓN DE FASTMCP Y BASE DE DATOS
+# ==========================================
+mcp = FastMCP("SQLite-CRUD-Server")
+DB_NAME = "usuarios.db"
+
+def init_db():
+    """Crea la tabla de usuarios si no existe al arrancar el servidor."""
+    with sqlite3.connect(DB_NAME) as conn:
+        cursor = conn.cursor()
+        cursor.execute("""
+            CREATE TABLE IF NOT EXISTS usuarios (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                nombre TEXT NOT NULL,
+                email TEXT NOT NULL UNIQUE,
+                edad INTEGER
+            )
+        """)
+        conn.commit()
+
+init_db()
+
+# ==========================================
+# 2. MODELOS DE PYDANTIC (Validación de Esquemas)
+# ==========================================
+class UsuarioCreate(BaseModel):
+    nombre: str = Field(..., description="Nombre completo del usuario")
+    email: str = Field(..., description="Correo electrónico único del usuario")
+    edad: Optional[int] = Field(None, description="Edad del usuario (opcional)")
+
+class UsuarioUpdate(BaseModel):
+    nombre: Optional[str] = Field(None, description="Nuevo nombre del usuario")
+    email: Optional[str] = Field(None, description="Nuevo correo electrónico")
+    edad: Optional[int] = Field(None, description="Nueva edad del usuario")
+
+# ==========================================
+# 3. HERRAMIENTAS MCP (Operaciones CRUD)
+# ==========================================
+
+@mcp.tool()
+def crear_usuario(usuario: UsuarioCreate) -> str:
+    """Crea un nuevo usuario en la base de datos."""
+    try:
+        with sqlite3.connect(DB_NAME) as conn:
+            cursor = conn.cursor()
+            cursor.execute(
+                "INSERT INTO usuarios (nombre, email, edad) VALUES (?, ?, ?)",
+                (usuario.nombre, usuario.email, usuario.edad)
+            )
+            conn.commit()
+            return f"✅ Usuario creado con éxito. ID asignado: {cursor.lastrowid}"
+    except sqlite3.IntegrityError:
+        return f"❌ Error: El email '{usuario.email}' ya se encuentra registrado."
+
+@mcp.tool()
+def leer_usuarios() -> str:
+    """Obtiene la lista completa de usuarios registrados."""
+    with sqlite3.connect(DB_NAME) as conn:
+        conn.row_factory = sqlite3.Row
+        cursor = conn.cursor()
+        cursor.execute("SELECT * FROM usuarios")
+        rows = cursor.fetchall()
+
+        if not rows:
+            return "No hay usuarios registrados en la base de datos."
+
+        resultado = []
+        for row in rows:
+            resultado.append(f"ID: {row['id']} | Nombre: {row['nombre']} | Email: {row['email']} | Edad: {row['edad']}")
+        return "\n".join(resultado)
+
+@mcp.tool()
+def actualizar_usuario(usuario_id: int, datos: UsuarioUpdate) -> str:
+    """Actualiza los campos de un usuario existente por su ID."""
+    # Filtrar solo los campos que el LLM decidió enviar para actualizar
+    campos_a_actualizar = datos.model_dump(exclude_unset=True)
+    if not campos_a_actualizar:
+        return "⚠️ No se proporcionaron campos para actualizar."
+
+    query = "UPDATE usuarios SET " + ", ".join([f"{k} = ?" for k in campos_a_actualizar.keys()]) + " WHERE id = ?"
+    valores = list(campos_a_actualizar.values()) + [usuario_id]
+
+    with sqlite3.connect(DB_NAME) as conn:
+        cursor = conn.cursor()
+        cursor.execute(query, valores)
+        conn.commit()
+
+        if cursor.rowcount == 0:
+            return f"❌ No se encontró ningún usuario con el ID {usuario_id}."
+        return f"🔄 Usuario con ID {usuario_id} actualizado correctamente."
+
+@mcp.tool()
+def eliminar_usuario(usuario_id: int) -> str:
+    """Elimina permanentemente un usuario de la base de datos por su ID."""
+    with sqlite3.connect(DB_NAME) as conn:
+        cursor = conn.cursor()
+        cursor.execute("DELETE FROM usuarios WHERE id = ?", (usuario_id,))
+        conn.commit()
+
+        if cursor.rowcount == 0:
+            return f"❌ No se encontró ningún usuario con el ID {usuario_id}."
+        return f"🗑️ Usuario con ID {usuario_id} eliminado con éxito."
+
+# ==========================================
+# 4. EJECUCIÓN DEL SERVIDOR (Comunicación stdio)
+# ==========================================
+if __name__ == "__main__":
+    mcp.run()
+```
+
+#### 3. ¿Cómo entiende el LLM este CRUD gracias a Pydantic?
+
+Cuando el Host arranca este script, FastMCP inspecciona tus clases de Pydantic (`UsuarioCreate`, `UsuarioUpdate`) junto con las descripciones que pusiste en los `Field()`.
+
+Automáticamente, durante la fase de **Descubrimiento**, el servidor le enviará al cliente un esquema JSON-Schema rígido. Si el usuario le dice al LLM *"Agrega a Juan Pérez, mail juan@gmail.com de 30 años"*, el LLM sabrá exactamente que debe estructurar y enviar la petición JSON-RPC mapeando los datos de Juan a la estructura del objeto de Pydantic.

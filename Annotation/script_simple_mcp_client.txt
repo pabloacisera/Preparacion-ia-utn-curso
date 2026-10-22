@@ -1,0 +1,65 @@
+import asyncio
+import os
+from langchain.agents import create_react_agent, AgentExecutor
+from langchain.mcp import MCPAdapter
+from langchain_groq import ChatGroq
+from langchain_core.prompts import PromptTemplate
+
+# 1. Configura tu API Key de Groq
+os.environ["GROQ_API_KEY"] = "tu-api-key-de-groq"
+
+async def run_agent():
+    # 2. Ruta absoluta hacia tu servidor de FastMCP (archivo server.py creado anteriormente)
+    server_path = os.path.abspath("server.py")
+
+    # 3. Conectarse al servidor MCP local usando el adaptador de LangChain
+    async with MCPAdapter(server_path) as adapter:
+
+        # Recuperamos automáticamente las herramientas creadas (create_user, read_users, etc.)
+        mcp_tools = await adapter.list_tools()
+
+        # 4. Inicializar el modelo con ChatGroq (asegúrate de usar un modelo que admita Tools)
+        llm = ChatGroq(
+            model="llama-3.3-70b-specdec", # O el modelo compatible con Tools que prefieras
+            temperature=0
+        )
+
+        # 5. Configurar el Prompt base estilo ReAct
+        prompt_template = """
+        Eres un asistente administrativo encargado de la base de datos de usuarios.
+        Tienes acceso a las siguientes herramientas para interactuar con la base de datos:
+        {tools}
+
+        Para usar una herramienta, debes usar el siguiente formato:
+        Thought: Do I need to use a tool? Yes
+        Action: the action to take, should be one of [{tool_names}]
+        Action Input: the input to the action
+        Observation: the result of the action
+
+        Cuando tengas la respuesta final para el usuario, debes usar el formato:
+        Thought: Do I need to use a tool? No
+        Final Answer: [tu respuesta final en español]
+
+        Comienza!
+        Question: {input}
+        Assistant: {agent_scratchpad}
+        """
+
+        prompt = PromptTemplate.from_template(prompt_template)
+
+        # 6. Crear el agente de LangChain e inyectarle las herramientas del MCP
+        agent = create_react_agent(llm, mcp_tools, prompt)
+        agent_executor = AgentExecutor(agent=agent, tools=mcp_tools, verbose=True)
+
+        # 7. Ejecutar la consulta del agente
+        print("--- Iniciando agente con Groq ---")
+        response = await agent_executor.ainvoke({
+            "input": "Agrega un usuario llamado Mateo Paz con el correo mateo@mail.com. Luego lee los usuarios para verificar que esté en la lista."
+        })
+
+        print("\n[Respuesta del Agente]:")
+        print(response["output"])
+
+# Ejecución del bloque asíncrono
+if __name__ == "__main__":
+    asyncio.run(run_agent())

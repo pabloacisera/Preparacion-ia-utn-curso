@@ -109,4 +109,4 @@ Es el mismo mecanismo que resuelve los **datos privados**: si está indexado, el
 - [02 — Chunking: fragmentar un documento](./ejercicios/02-chunking.md)
 - [03 — De fragmentos a vectores y búsqueda](./ejercicios/03-busqueda-vectorial.md)
 
-[Menu Principal](../../README.md) | [Anterior: Funcionamiento interno](../Funcionamiento-Interno/readme.md) | [Siguiente: LangChain](../LangChain/readme.md)
+[Menu Principal](../../README.md) | [Índice IA](../readme.md) | [Anterior: LLM + Agentes con LangChain ←](../11-4-langchain/readme.md) | [Siguiente: Agentes no-code →](../11-6-agentes-nocode/readme.md)

@@ -61,7 +61,7 @@ curl -o /dev/null -s -w "Código: %{http_code}\n" https://httpbin.org/get
 ## Práctica guiada
 
 Los ejercicios prácticos centralizados están en:
-[Practicas/API/curl/](../../Practicas/API/curl/)
+[Practicas/API/curl/](../Practicas/API/curl/)
 
 Ahí vas a encontrar los scripts `.sh` para ejecutar paso a paso.
 
@@ -77,4 +77,4 @@ Ahí vas a encontrar los scripts `.sh` para ejecutar paso a paso.
 - Practicar GET/POST con JSON es la base para llamar APIs de LLM.
 - httpbin es ideal para aprender sin riesgo.
 
-[← Anterior: APIs en IA](./08-apis-en-ia.md) | [Índice](./README.md) | [Siguiente: Errores comunes →](./10-errores-comumas.md)
+[← Anterior: APIs en IA](./08-apis-en-ia.md) | [Índice](./README.md) | [Siguiente: Errores comunes →](./10-errores-comunes.md)

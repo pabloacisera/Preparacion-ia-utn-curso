@@ -49,4 +49,4 @@ Los errores HTTP son **normales** cuando aprendés APIs. Leer el mensaje de erro
 - Con LLMs, el body del error suele decir qué campo falta.
 - Debuggear = leer headers + body.
 
-[← Anterior: Ejercicios con curl](./09-ejercicios-con-curl.md) | [Índice](./README.md) | [Siguiente: Practicas/API →](../../Practicas/API/README.md)
+[← Anterior: Ejercicios con curl](./09-ejercicios-con-curl.md) | [Índice](./README.md) | [Siguiente: Practicas/API →](../Practicas/API/README.md)

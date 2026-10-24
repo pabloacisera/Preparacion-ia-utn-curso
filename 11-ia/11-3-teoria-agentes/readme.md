@@ -88,8 +88,9 @@ Un agente con herramientas es una superficie de ataque. Amenazas típicas:
 
 ## Ejercicios
 
-- [01 — Tu primer agente con tools](./ejercicios/01-primer-agente-tools.md)
-- [02 — Agente con varias herramientas y traza](./ejercicios/02-agente-varias-tools.md)
-- [03 — Guardrails de seguridad](./ejercicios/03-guardrails.md)
+Los ejercicios prácticos de agentes con herramientas (`@tool`, `create_agent`, guardrails) se encuentran en **[11-4 LLM + Agentes con LangChain](../11-4-langchain/readme.md)**:
+- [01 — Tu primer agente con tools](../11-4-langchain/ejercicios/01-primer-agente-tools.md)
+- [02 — Agente con varias herramientas y traza](../11-4-langchain/ejercicios/02-agente-varias-tools.md)
+- [03 — Guardrails de seguridad](../11-4-langchain/ejercicios/03-guardrails.md)
 
-[Menu Principal](../../README.md) | [Anterior: LangChain](../LangChain/readme.md) | [Siguiente: Agentes no-code](../Agentes-NoCode/readme.md)
+[Menu Principal](../../README.md) | [Índice IA](../readme.md) | [Anterior: Funcionamiento interno ←](../11-2-funcionamiento-interno/readme.md) | [Siguiente: LLM + Agentes con LangChain →](../11-4-langchain/readme.md)

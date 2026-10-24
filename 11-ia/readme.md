@@ -9,9 +9,9 @@
 5. [11-5 - ¿Qué es RAG?](./11-5-que-es-rag/readme.md)
 6. [11-6 - Agentes NoCode](./11-6-agentes-nocode/readme.md)
 
-## Práctica centralizada
+## Práctica
 
-Los ejercicios prácticos van en [Practicas/IA/](../Practicas/IA/README.md)
+Los ejercicios prácticos se encuentran dentro de cada submódulo (`11-*/ejercicios/`). Además hay material complementario en `11-5-que-es-rag/oracle-ai-fundations/` y `11-5-que-es-rag/Formencia/`.
 
 ## Notas
 

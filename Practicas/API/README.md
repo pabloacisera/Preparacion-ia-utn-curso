@@ -2,7 +2,7 @@
 
 ## Objetivo
 
-Practicar el consumo de APIs con `curl` paso a paso. Estos ejercicios complementan la teoría del módulo [09-api](../09-api/README.md).
+Practicar el consumo de APIs con `curl` paso a paso. Estos ejercicios complementan la teoría del módulo [09-api](../../09-api/README.md).
 
 ## Estructura
 
@@ -37,4 +37,4 @@ bash curl/01-curl-get.sh
 - Leé la salida: te muestra qué enviaste y qué devolvió el servidor.
 - Ideal para entender el flujo cliente-servidor antes de llamar APIs de LLM.
 
-[← Volver a 09-API](../09-api/README.md) | [Índice principal](../README.md)
+[← Volver a 09-API](../../09-api/README.md) | [Índice principal](../../README.md)

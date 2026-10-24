@@ -101,4 +101,4 @@ Para quien quiera ver **cómo se construye** un mini-modelo desde cero (atenció
 - [03 — Cómo predice el modelo](./ejercicios/03-como-predice-el-modelo.md)
 - [04 — Ejecutar un modelo con ONNX Runtime](./ejercicios/04-ejecutar-un-modelo-con-onnx.md)
 
-[Menu Principal](../../README.md) | [Anterior: Introducción a los LLMs](../Introduccion-LLMs/readme.md) | [Siguiente: RAG](../RAG/readme.md)
+[Menu Principal](../../README.md) | [Índice IA](../readme.md) | [Anterior: Introducción a los LLMs ←](../11-1-introduccion-llms/readme.md) | [Siguiente: Teoría de agentes →](../11-3-teoria-agentes/readme.md)

@@ -28,4 +28,4 @@ Los ejercicios prácticos están centralizados en: [Practicas/API/](../Practicas
 - **RAG**: usa APIs de embeddings y bases vectoriales.
 - **Automatización**: podés integrar cualquier servicio con un script.
 
-[← Anterior: Python](../08-python/README.md) | [Índice principal](../README.md) | [Siguiente: SQL →](../10-sql/README.md)
+[← Anterior: Python](../08-python/08-1-fundamentos/fundamento.python.readme.md) | [Índice principal](../README.md) | [Siguiente: SQL →](../10-sql/README.md)

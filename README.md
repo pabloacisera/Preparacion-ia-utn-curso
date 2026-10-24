@@ -1,31 +1,57 @@
-## Indice
+# Preparación IA - UTN Curso
 
-0. [Configuración Inicial](./00-configuracion-inicial/00-1-laptop/install.md)
-   - [Notebook](./00-configuracion-inicial/00-1-laptop/install.md)
-   - [Smartphone](./00-configuracion-inicial/00-2-android/install.md)
-1. [Fundamentos de programación](./01-fundamentos/fundamento.readme.md)
-2. [Terminal](./02-terminal/terminal.readme.md)
-3. [PowerShell (mínimo para instalar WSL)](./03-powershell/powershell.readme.md)
-4. [Bash (dentro de WSL/Linux)](./04-bash/bash.readme.md)
-5. [SSH: conexión remota segura](./05-ssh/ssh.readme.md)
-6. [Git: repositorio local](./06-git/git.readme.md)
-7. [Github: repositorio remoto](./07-github/github.readme.md)
-8. Python
-   - [Fundamentos de Python](./08-python/08-1-fundamentos/fundamento.python.readme.md)
-   - [Basicos: ejecución, tipos de datos y variables](./08-python/08-2-basicos/basicos.python.readme.md)
-   - [Estructuras condicionales](./08-python/08-3-estructuras-condicionales/condicionales.readme.md)
-   - [Bucles y Loops](./08-python/08-4-bucles/bucles.readme.md)
+## Índice General
+
+### Configuración Inicial
+1. [Configuración Inicial](./00-configuracion-inicial/00-1-laptop/install.md)
+   - [Instalación en Laptop (Windows + WSL)](./00-configuracion-inicial/00-1-laptop/install.md)
+   - [Instalación en Android (Termux)](./00-configuracion-inicial/00-2-android/install.md)
+
+### Fundamentos y Herramientas
+2. [Fundamentos de Programación](./01-fundamentos/fundamento.readme.md)
+   - [Sistema Operativo](./01-fundamentos/00-que-es-un-sistema-operativo.md)
+   - [¿Qué es programar?](./01-fundamentos/01-que-es-programar.md)
+   - [Algoritmos y Lógica](./01-fundamentos/02-algoritmos-y-logica.md)
+   - [Datos, Tipos y Variables](./01-fundamentos/03-datos-tipos-y-variables.md)
+   - [Operadores y Expresiones](./01-fundamentos/04-operadores-y-expresiones.md)
+   - [Control de Flujo](./01-fundamentos/05-control-de-flujo.md)
+
+3. [Terminal](./02-terminal/terminal.readme.md)
+4. [PowerShell](./03-powershell/powershell.readme.md)
+5. [Bash](./04-bash/bash.readme.md)
+6. [SSH](./05-ssh/ssh.readme.md)
+7. [Git](./06-git/git.readme.md)
+8. [GitHub](./07-github/github.readme.md)
+
+### Python
+9. [Python](./08-python/08-1-fundamentos/fundamento.python.readme.md)
+   - [Fundamentos](./08-python/08-1-fundamentos/fundamento.python.readme.md)
+   - [Entorno Virtual (venv)](./08-python/08-1-fundamentos/02-entorno-virtual-venv.md)
+   - [Básicos](./08-python/08-2-basicos/basicos.python.readme.md)
+   - [Estructuras Condicionales](./08-python/08-3-estructuras-condicionales/condicionales.readme.md)
+   - [Bucles](./08-python/08-4-bucles/bucles.readme.md)
    - [Funciones](./08-python/08-5-funciones/funciones.readme.md)
-   - [Modulos](./08-python/08-6-modulos/modulos.readme.md)
-   - [Librerías Nativas](./08-python/08-7-librerias/liberias.readme.md)
-9. [API: Introducción, flujo, peticiones, curl](./09-api/README.md)
-10. [SQL: Bases de datos relacionales, CRUD, JOIN, migraciones](./10-sql/README.md)
-11. Inteligencia Artificial
-   - [Introducción a los LLMs](./11-ia/Introduccion-LLMs/readme.md)
-   - [Funcionamiento interno: tokens, embeddings y vectores](./11-ia/Funcionamiento-Interno/readme.md)
-   - [RAG: conocimiento privado y memoria](./11-ia/RAG/readme.md)
-   - [LangChain y su ecosistema](./11-ia/LangChain/readme.md)
-   - [Agentes](./11-ia/Agentes/readme.md)
-   - [Agentes no-code: specs, skills y MCP](./11-ia/Agentes-NoCode/readme.md)
-   - [Planificación](./11-ia/Planificacion/readme.md)
-12. [Glosario](./Glosario.md)
+   - [Módulos](./08-python/08-6-modulos/modulos.readme.md)
+   - [Librerías](./08-python/08-7-librerias/liberias.readme.md)
+
+### APIs y Bases de Datos
+10. [API: Introducción, flujo, peticiones, curl](./09-api/README.md)
+11. [SQL: Bases de datos relacionales, CRUD, JOIN, migraciones](./10-sql/README.md)
+
+### Inteligencia Artificial
+12. [Inteligencia Artificial](./11-ia/readme.md)
+    1. [Introducción a los LLMs](./11-ia/11-1-introduccion-llms/readme.md)
+    2. [Funcionamiento interno: tokens, embeddings y vectores](./11-ia/11-2-funcionamiento-interno/readme.md)
+    3. [Teoría de agentes](./11-ia/11-3-teoria-agentes/readme.md)
+    4. [LLM + Agentes con LangChain](./11-ia/11-4-langchain/readme.md)
+    5. [¿Qué es RAG?](./11-ia/11-5-que-es-rag/readme.md)
+    6. [Agentes NoCode](./11-ia/11-6-agentes-nocode/readme.md)
+
+### Recursos
+13. [Glosario](./Glosario.md)
+
+## Prácticas
+- [Prácticas API](./Practicas/API/README.md)
+- [Prácticas SQL](./Practicas/SQL/README.md)
+
+[Menu Principal](./README.md)

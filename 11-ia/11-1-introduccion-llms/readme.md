@@ -8,7 +8,7 @@ Un **LLM** (*Large Language Model*, modelo grande de lenguaje) es un programa en
 
 No consulta una base de datos ni "sabe" cosas: calcula probabilidades. Cuando le pedimos una respuesta, en realidad le pedimos que **continúe** un texto de la forma más probable.
 
-> Los detalles internos (tokens, embeddings, cómo calcula esas probabilidades) se ven en el [Módulo 11](../Funcionamiento-Interno/readme.md). Por ahora alcanza con la idea de "autocompletar muy entrenado".
+> Los detalles internos (tokens, embeddings, cómo calcula esas probabilidades) se ven en el [Módulo 11-2](../11-2-funcionamiento-interno/readme.md). Por ahora alcanza con la idea de "autocompletar muy entrenado".
 
 ## Cómo se usa: la API
 
@@ -90,6 +90,6 @@ Formas de reducirla:
 
 ## Cierre
 
-Ya sabemos **qué** es un LLM y **cómo** se lo invoca. La pregunta que queda abierta es *qué pasa por dentro* cuando calcula esa respuesta. Eso es el [Módulo 11](../Funcionamiento-Interno/readme.md).
+Ya sabemos **qué** es un LLM y **cómo** se lo invoca. La pregunta que queda abierta es *qué pasa por dentro* cuando calcula esa respuesta. Eso es el [Módulo 11-2](../11-2-funcionamiento-interno/readme.md).
 
-[Menu Principal](../../README.md) | [Siguiente: Funcionamiento interno](../Funcionamiento-Interno/readme.md)
+[Menu Principal](../../README.md) | [Índice IA](../readme.md) | [Siguiente: Funcionamiento interno →](../11-2-funcionamiento-interno/readme.md)

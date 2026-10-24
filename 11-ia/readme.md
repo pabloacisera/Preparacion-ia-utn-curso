@@ -1,30 +1,22 @@
-# Inteligencia Artificial
+# 11 - Inteligencia Artificial: Índice
 
-Esta sección es el núcleo del curso. Va **de lo general a lo interno y de vuelta a la práctica**: primero entendemos qué es un LLM y cómo se usa; después abrimos la caja para ver tokens, embeddings y vectores; con esa base construimos un RAG, lo orquestamos con LangChain y, al final, damos autonomía al modelo para convertirlo en un agente.
+## Orden aprobado
 
-> **Filosofía:** solo lo necesario. El curso dura pocos meses y las horas semanales son limitadas, así que cada tema se enseña a la profundidad que hace falta para entender el sistema completo: **LLM, agentes, LangChain, chunking, embeddings, vectores, bases de datos vectoriales y streaming**. No es un curso de ingeniería de IA: no llegamos a machine learning ni a deep learning.
+1. [11-1 - Introducción a los LLMs](./11-1-introduccion-llms/readme.md)
+2. [11-2 - Funcionamiento interno](./11-2-funcionamiento-interno/readme.md)
+3. [11-3 - Teoría de agentes](./11-3-teoria-agentes/readme.md)
+4. [11-4 - LLM + Agentes con LangChain](./11-4-langchain/readme.md)
+5. [11-5 - ¿Qué es RAG?](./11-5-que-es-rag/readme.md)
+6. [11-6 - Agentes NoCode](./11-6-agentes-nocode/readme.md)
 
-## Recorrido
+## Práctica centralizada
 
-| # | Módulo | Pregunta que responde |
-|---|--------|-----------------------|
-| 10 | [Introducción a los LLMs](./Introduccion-LLMs/readme.md) | ¿Qué es un LLM, cómo se usa por API y por qué alucina? |
-| 11 | [Funcionamiento interno](./Funcionamiento-Interno/readme.md) | ¿Qué pasa por dentro: tokens, embeddings y vectores? |
-| 12 | [RAG](./RAG/readme.md) | ¿Cómo le damos conocimiento privado y memoria a largo plazo? |
-| 13 | [LangChain y su ecosistema](./LangChain/readme.md) | ¿Cómo se orquestan cadenas, conectores y memoria? |
-| 14 | [Agentes](./Agentes/readme.md) | ¿Cómo le damos autonomía al modelo sobre todo lo anterior? |
-| 15 | [Agentes no-code](./Agentes-NoCode/readme.md) | ¿Qué son specs, skills y MCP (sin programar)? |
+Los ejercicios prácticos van en [Practicas/IA/](../Practicas/IA/README.md)
 
-## Cómo está organizado cada módulo
+## Notas
 
-Cada carpeta tiene un `readme.md` con la teoría y una subcarpeta `ejercicios/` con la práctica. **Cada ejercicio es un archivo `.md`** que contiene la consigna, el código en un bloque y el resultado esperado.
+- Los ejercicios de **agentes con herramientas** (`@tool`, `create_agent`, guardrails) se encuentran en **11-4 LangChain**.
+- Los archivos internos de planificación se movieron a `docs-internos/planificacion/`.
+- El contenido de `oracle-ai-fundations`, `Formencia` y `extraer_texts.ipynb` se mantiene dentro de `11-5-que-es-rag/`.
 
-## Instalación
-
-Las dependencias de toda la sección están en [`requirements.txt`](../requirements.txt):
-
-```bash
-pip install -r requirements.txt
-```
-
-[Menu Principal](../README.md)
+[← Anterior: SQL](../10-sql/README.md) | [Índice principal](../README.md)

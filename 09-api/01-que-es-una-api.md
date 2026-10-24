@@ -2,39 +2,50 @@
 
 ## Objetivo
 
-Entender el concepto de API con un lenguaje claro, sin tecnicismos innecesarios.
+Entender el concepto de API, para qué sirve y por qué es clave para la IA moderna.
 
-## Definición
+## ¿Qué significa API?
 
-**API** significa *Application Programming Interface* (Interfaz de Programación de Aplicaciones). 
+**API** = *Application Programming Interface* (Interfaz de Programación de Aplicaciones).
 
-Una API es un **puente** que permite que dos aplicaciones se comuniquen entre sí, siguiendo un conjunto de reglas claras.
+En palabras simples: es un **acuerdo** que permite que dos aplicaciones se comuniquen entre sí, sin tener que saber cómo funciona cada una por dentro.
 
-## Analogía sencilla
+## Analogía: el mesero en un restaurante
 
-Piensa en un restaurante:
-- **Tú** eres el cliente. Quieres pedir comida.
-- **El camarero** es la API. Tú no vas directamente a la cocina.
-- **La cocina** es el servidor. Ahí se prepara lo que pediste.
+Imaginá que vas a un restaurante:
+- **Vos** = cliente (querés pedir comida)
+- **Cocina** = sistema (tiene los ingredientes y sabe cocinar)
+- **Mesero** = API (toma tu pedido, se lo lleva a la cocina y te trae la comida)
 
-**La API (camarero)** recibe tu pedido, se lo comunica a la cocina y te trae lo que solicitaste. Tú no necesitas saber cómo funciona la cocina para obtener tu comida.
+No necesitás entrar a la cocina para pedir. El mesero es el intermediario que conoce las reglas.
 
-## ¿Por qué existen las APIs?
+## ¿Cómo funciona?
 
-- **Organización**: Cada sistema tiene sus propias reglas y responsabilidades
-- **Seguridad**: No se le da acceso directo a todo, solo a lo necesario
-- **Simplicidad**: Puedes usar un servicio sin entenderlo completamente
-- **Conexión**: Permiten que diferentes aplicaciones trabajen juntas
+1. El cliente hace una **petición** a través de la API.
+2. La API lleva esa petición al sistema correspondiente.
+3. El sistema responde con los datos o realiza la acción.
+4. La API le devuelve esa respuesta al cliente.
 
-## Ejemplos cotidianos
+## Ejemplos reales
 
-- **App del clima**: Usa una API para obtener el pronóstico
-- **Iniciar sesión con Google**: Usa la API de Google para autenticarte
-- **Comprar con MercadoPago**: Usa la API de MercadoPago para procesar el pago
-- **Chat con IA**: Usa la API del modelo para obtener respuestas
+| Aplicación | Uso de API |
+|---|---|
+| Google Maps | Mostrar mapas en otra app |
+| Twitter/X | Obtener tweets o publicar |
+| MercadoPago | Procesar pagos |
+| ChatGPT/Groq/Gemini | Enviar pregunta y recibir respuesta |
 
-## Idea clave
+## ¿Por qué es importante para este curso?
 
-**Una API define QUÉ puedes pedir, CÓMO pedirlo y QUÉ te van a devolver.**
+- **LLMs**: accedés al modelo mediante una API.
+- **Agentes**: las herramientas que usan son, muchas veces, APIs.
+- **RAG**: necesitás APIs para embeddings o bases vectoriales.
+- **Automatización**: podés conectar todo con código.
 
-[← Volver al índice](./README.md) | [Siguiente: Contexto, dónde y cuándo se usa →](./02-contexto-donde-cuando-se-usa.md)
+## Recapitulación
+
+- Una API es un puente entre aplicaciones.
+- Permite pedir información o ejecutar acciones sin conocer los detalles internos.
+- Es la forma en que hoy se conecta todo, incluyendo la IA.
+
+[← Índice](./README.md) | [Siguiente: Contexto: dónde y cuándo se usa una API →](./02-contexto-donde-cuando-se-usa.md)

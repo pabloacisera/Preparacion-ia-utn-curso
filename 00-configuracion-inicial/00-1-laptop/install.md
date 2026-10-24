@@ -17,10 +17,10 @@ En esta sección vamos a comenzar a preparar un entorno de trabajo. Para ello ne
 
 Ingresen a `https://google.com.ar` y busquen `visual studio code`.
 
-![imagen-google-descarga-vscode](./recursos/descargar-visual-studio-code.png)
+![imagen-google-descarga-vscode](../../assets/imagenes/00-configuracion-inicial/00-1-laptop/descargar-visual-studio-code.png)
 
 Hacemos clic en:
-![boton-descarga-vscode](./recursos/boton-descarga-vscode.png)
+![boton-descarga-vscode](../../assets/imagenes/00-configuracion-inicial/00-1-laptop/boton-descarga-vscode.png)
 
 ---
 
@@ -28,7 +28,7 @@ Hacemos clic en:
 
 Abrimos la Store integrada en Windows que tenemos en la barra de tareas:
 
-![descarga-desde-store-windows](./recursos/descargar-terminal-1.png)
+![descarga-desde-store-windows](../../assets/imagenes/00-configuracion-inicial/00-1-laptop/descargar-terminal-1.png)
 
 [Descargar directamente desde la plataforma de Microsoft (Instalador MSI)](https://learn.microsoft.com/en-us/powershell/scripting/install/install-powershell-on-windows?view=powershell-7.6#msi)
 
@@ -56,11 +56,11 @@ wsl --install -d Debian
 
 Durante el proceso se les solicitará un usuario y una contraseña. Esta última es **totalmente invisible** al ser tipeada por motivos de seguridad (¡CUIDADO, avancen a ciegas pero con atención!).
 
-![tipear-usuario-y-contraseña](./recursos/user-and-password.png)
+![tipear-usuario-y-contraseña](../../assets/imagenes/00-configuracion-inicial/00-1-laptop/user-and-password.png)
 
 La salida esperada si el proceso es correcto es:
 
-![debian-instalada-ok](./recursos/debian-instalado-ok.png)
+![debian-instalada-ok](../../assets/imagenes/00-configuracion-inicial/00-1-laptop/debian-instalado-ok.png)
 
 Si el proceso anterior fue exitoso, deberíamos poder abrir nuestra consola de PowerShell, escribir el comando `wsl` y ver cómo la terminal cambia para mostrar el entorno de Linux Debian.
 
@@ -118,7 +118,7 @@ git --version && curl --version && pip3 --version
 
 Para conectar nuestro editor con el entorno Linux, nos posicionamos en la sección de extensiones en el panel lateral de Visual Studio Code y buscamos la extensión oficial llamada **WSL** (además de las extensiones de **Python** y **Jupyter**).
 
-![panel-lateral-extension](./recursos/extensiones-vscode.png)
+![panel-lateral-extension](../../assets/imagenes/00-configuracion-inicial/00-1-laptop/extensiones-vscode.png)
 
 ## Vincular ipykernel con Jupyter Notebook.
 
@@ -128,7 +128,7 @@ La ventana que nos otorga es que en vez de ejecutar todo el código de una sola 
 
 Su principal fortaleza esta en el encapsulamiento del codigo y en la reproducciòn exacta de ese codigo.
 
-Pero, su naturaleza, es ser una interfaz, no tiene un motor especifico que le permite interpretar el documento, y ahí es donde entra en juego el kernel, interprete o compilador de un lenguaje, que en este caso viene a su ser nuestro entorno "venv" o [Virtual Environment](../../../Fundamentos/fundamento.readme.md#virtual-environmententorno-virtual-o-venv).
+Pero, su naturaleza, es ser una interfaz, no tiene un motor especifico que le permite interpretar el documento, y ahí es donde entra en juego el kernel, interprete o compilador de un lenguaje, que en este caso viene a su ser nuestro entorno "venv" o [Virtual Environment](../../01-fundamentos/fundamento.readme.md#virtual-environmententorno-virtual-o-venv).
 
 Para que Jupyter pueda conocer ese entorno que nosotros creamos gracias al modulo de python "venv", debemos vincularlo
 

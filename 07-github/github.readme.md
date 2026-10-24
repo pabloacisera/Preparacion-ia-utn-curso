@@ -22,7 +22,7 @@ Sirve para organizar el trabajo y reportar errores. Ofrece tableros tipo kanban 
 
 Nos dirigimos a la página `https://github.com` y le hacemos click al boton `Sign In`
 
-<img src="github-register.png" width="650">
+<img src="../assets/imagenes/07-github/github-register.png" width="650">
 
 
 Una vez que hayamos creado el perfil procederemos a forkear el repositorio del curso:
@@ -43,21 +43,21 @@ Crear un repositorio es crear una espacio de almacenamiento el cual podra ser cl
 
 - En la parte superior derecha encontramos el boton para crear un nuevo repositorio
 
-<img src="./github-new-repo.png" width="650">
+<img src="../assets/imagenes/07-github/github-new-repo.png" width="650">
 
 - Se abrira el formulario de creacion de repositorios
 
-<img src="./create-repo.png" width="650">
+<img src="../assets/imagenes/07-github/create-repo.png" width="650">
 
 ## Clonar un repositorio
 
 Para que el sistema nos permita clonar, debemos primero crear par de llaves con `ssh-keygen`, debemos alojarla en la sección de Github correspondiente:
 
-<img src="./github-config.png" width="650">
+<img src="../assets/imagenes/07-github/github-config.png" width="650">
 
 Vamos a buscar la seccion `SSH and GPG Keys`
 
-<img src="./ssh-keys.png" width="650">
+<img src="../assets/imagenes/07-github/ssh-keys.png" width="650">
 
 En la parte superior derecha hay un boton `New SSH Key`, esto abrira un modal con un formulario que nos pedirá un titulo o descripción y la llave.
 
@@ -73,6 +73,6 @@ Obtenemos la url del repositorio del curso:
 
 En la parte superior encontramos el boton de forkeo:
 
-<img src="./github-fork.png" width="650">
+<img src="../assets/imagenes/07-github/github-fork.png" width="650">
 
 Esto creará una copia con el mismo nombre en tu repositorio personal, el cual esta listo para ser clonado en tu dispositivo

@@ -23,7 +23,7 @@ La idea, en una frase: **en vez de meter los datos dentro del modelo, le pasamos
 - **Se actualiza** con solo cambiar los documentos indexados.
 - **Reduce las alucinaciones**, porque la respuesta se apoya en fuentes concretas.
 
-![RAG vs fine-tuning](./recursos/rag_vs_fine_tuning.png)
+![RAG vs fine-tuning](../../assets/imagenes/11-ia/rag/rag_vs_fine_tuning.png)
 
 > En este curso **no** hacemos fine-tuning ni entrenamiento. Solo RAG.
 
@@ -31,7 +31,7 @@ La idea, en una frase: **en vez de meter los datos dentro del modelo, le pasamos
 
 Un RAG no es un monolito: son **dos tuberías**.
 
-![Flujo básico de un RAG](./recursos/RAG-flow.png)
+![Flujo básico de un RAG](../../assets/imagenes/11-ia/rag/RAG-flow.png)
 
 ### A. Tubería de indexación (offline)
 

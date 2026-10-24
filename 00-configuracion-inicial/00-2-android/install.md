@@ -17,15 +17,15 @@ En esta sección vamos a comenzar a preparar un entorno de trabajo. Para ello ne
 
 Ingresan a la Playstore de android y buscan la aplicación `Acode` e instalan.
 
-![playstore-install-aplication](./recursos/playstore-app.jpeg)
+![playstore-install-aplication](../../assets/imagenes/00-configuracion-inicial/00-2-android/playstore-app.jpeg)
 
 Una vez abierta veran la terminal integrada:
 
-![integrated-terminal-app](./recursos/principal-app-terminal.jpg)
+![integrated-terminal-app](../../assets/imagenes/00-configuracion-inicial/00-2-android/principal-app-terminal.jpg)
 
 Cuando ingresemos a la comenzara a instalarse el emulador automaticamente, y si el proceso exitoso deberiamos ver la presentación del sistema de gestión de paquetes de Alpine linux(apk)
 
-![integrated-terminal-app](./recursos/terminal-apk.jpeg)
+![integrated-terminal-app](../../assets/imagenes/00-configuracion-inicial/00-2-android/terminal-apk.jpeg)
 
 ## Instalación de paquetes globales
 

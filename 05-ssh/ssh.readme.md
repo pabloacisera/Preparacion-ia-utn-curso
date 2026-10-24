@@ -54,7 +54,7 @@ Enter passphrase (empty for no passphrase):
 
 Si el proceso fue exitoso deberias ver algo como:
 
-![par-rsa-creado](./archivo-rsa-creado.png)
+![par-rsa-creado](../assets/imagenes/05-ssh/archivo-rsa-creado.png)
 
 En cuanto al par ed25519 es:
 

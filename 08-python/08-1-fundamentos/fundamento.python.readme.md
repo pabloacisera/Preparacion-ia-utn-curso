@@ -27,4 +27,4 @@ En lenguajes como c el programador tiene que preocuparse por liberar la memoria 
 Python viene con una gran cantidad de libreria nativa, que permite obtener información del dispositivo, comunicarse con otros dispositivos, ejecutar opearciones matematicas, manipular documentos, etc.
 
 [Menu Principal](../../README.md)
-[Siguiente Lección: Basicos](../08-2-basicos/basicos.python.readme.md)
+[Siguiente Lección: Entorno virtual (venv)](./02-entorno-virtual-venv.md)

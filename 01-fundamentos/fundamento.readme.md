@@ -1,17 +1,22 @@
 # Fundamentos de Programación
 
-### ¿Que es un sistema operativo?
+> **Objetivo:** entender qué es programar y las ideas básicas que vas a usar en todo el curso, sin asumir ningún conocimiento previo. Estas ideas son la base sobre la que después se apoyan Python, las APIs, las bases de datos y finalmente los LLM, los agentes y RAG.
 
-### Virtual Environment(Entorno Virtual o venv)
+## ¿Por qué empezar acá?
 
-Es igual a decir Labortaorio personal, o entorno aislado, o entorno de prueba. Un conjunto de herramientas, almacenadas o empaquetadas en lugar, que viene a conformar el ecosistema de un proyecto.
+Un LLM, un agente o un RAG **son programas**. Para entenderlos y modificarlos necesitás saber qué es un programa, cómo se guarda la información y cómo se toman decisiones. No hace falta ser experto: alcanza con entender estas bases.
 
-Imagina que tu computadora es un gran edificio. Si instalas todas tus librerías de Python de forma global, es como si todos tus proyectos compartieran una única mesa de trabajo gigante. Si un proyecto ensucia la mesa o cambia las herramientas, arruina los proyectos de los demás.
-Crear un venv es como construir una habitación separada con su propia mesa y sus propias herramientas exclusivas para un proyecto específico. Nada de lo que pase ahí dentro afectará al resto del edificio (tu computadora).
+## Ruta
 
-*Contenido Básico de un venv*
+1. [00 - ¿Qué es un sistema operativo?](./00-que-es-un-sistema-operativo.md)
+2. [01 - ¿Qué es programar?](./01-que-es-programar.md)
+3. [02 - Algoritmos y lógica](./02-algoritmos-y-logica.md)
+4. [03 - Datos, tipos y variables](./03-datos-tipos-y-variables.md)
+5. [04 - Operadores y expresiones](./04-operadores-y-expresiones.md)
+6. [05 - Control de flujo: decisiones y repeticiones](./05-control-de-flujo.md)
 
-1. Una copia (o enlace) del ejecutable de Python: Así, ese entorno usa una versión fija de Python.
-2. Su propio gestor de paquetes (pip): Todas las librerías que descargues (como pandas, flask o scikit-learn) se guardarán estrictamente dentro de esa carpeta.
-3. Scripts de activación: Archivos especiales que le dicen a tu terminal: "Oye, a partir de ahora, cuando use Python, búscalo dentro de esta carpeta y no en el sistema global".
+## Prerrequisitos
 
+Ninguno. Solo ganas de aprender y una computadora.
+
+[← Índice principal](../README.md) | [Siguiente: ¿Qué es un sistema operativo? →](./00-que-es-un-sistema-operativo.md)

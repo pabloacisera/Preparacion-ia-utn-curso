@@ -128,7 +128,7 @@ La ventana que nos otorga es que en vez de ejecutar todo el código de una sola 
 
 Su principal fortaleza esta en el encapsulamiento del codigo y en la reproducciòn exacta de ese codigo.
 
-Pero, su naturaleza, es ser una interfaz, no tiene un motor especifico que le permite interpretar el documento, y ahí es donde entra en juego el kernel, interprete o compilador de un lenguaje, que en este caso viene a su ser nuestro entorno "venv" o [Virtual Environment](../../01-fundamentos/fundamento.readme.md#virtual-environmententorno-virtual-o-venv).
+Pero, su naturaleza, es ser una interfaz, no tiene un motor especifico que le permite interpretar el documento, y ahí es donde entra en juego el kernel, interprete o compilador de un lenguaje, que en este caso viene a su ser nuestro entorno "venv" o [Virtual Environment](../../08-python/08-1-fundamentos/02-entorno-virtual-venv.md).
 
 Para que Jupyter pueda conocer ese entorno que nosotros creamos gracias al modulo de python "venv", debemos vincularlo
 

@@ -1,8 +1,8 @@
 ## Indice
 
-0. [Configuración Inicial](./00-configuracion-inicial/Android/configuracion-android/install.md)
-   - [Notebook](./00-configuracion-inicial/Laptop/configuracion-laptop/install.md)
-   - [Smartphone](./00-configuracion-inicial/Android/configuracion-android/install.md)
+0. [Configuración Inicial](./00-configuracion-inicial/00-1-laptop/install.md)
+   - [Notebook](./00-configuracion-inicial/00-1-laptop/install.md)
+   - [Smartphone](./00-configuracion-inicial/00-2-android/install.md)
 1. [Fundamentos de programación](./01-fundamentos/fundamento.readme.md)
 2. [Terminal](./02-terminal/terminal.readme.md)
 3. [PowerShell (mínimo para instalar WSL)](./03-powershell/powershell.readme.md)
@@ -11,13 +11,13 @@
 6. [Git: repositorio local](./06-git/git.readme.md)
 7. [Github: repositorio remoto](./07-github/github.readme.md)
 8. Python
-   - [Fundamentos de Python](./08-python/Fundamentos/fundamento.python.readme.md)
-   - [Basicos: ejecución, tipos de datos y variables](./08-python/Basicos/basicos.python.readme.md)
-   - [Estructuras condicionales](./08-python/Estructuras/condicionales.readme.md)
-   - [Bucles y Loops](./08-python/Bucles/bucles.readme.md)
-   - [Funciones](./08-python/Funciones/funciones.readme.md)
-   - [Modulos](./08-python/Modulos/modulos.readme.md)
-   - [Librerías Nativas](./08-python/Librerias/liberias.readme.md)
+   - [Fundamentos de Python](./08-python/08-1-fundamentos/fundamento.python.readme.md)
+   - [Basicos: ejecución, tipos de datos y variables](./08-python/08-2-basicos/basicos.python.readme.md)
+   - [Estructuras condicionales](./08-python/08-3-estructuras-condicionales/condicionales.readme.md)
+   - [Bucles y Loops](./08-python/08-4-bucles/bucles.readme.md)
+   - [Funciones](./08-python/08-5-funciones/funciones.readme.md)
+   - [Modulos](./08-python/08-6-modulos/modulos.readme.md)
+   - [Librerías Nativas](./08-python/08-7-librerias/liberias.readme.md)
 9. [API: Introducción, flujo, peticiones, curl](./09-api/README.md)
 10. [SQL: Bases de datos relacionales, CRUD, JOIN, migraciones](./10-sql/README.md)
 11. Inteligencia Artificial

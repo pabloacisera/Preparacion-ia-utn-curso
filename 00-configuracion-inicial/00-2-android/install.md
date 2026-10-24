@@ -17,15 +17,15 @@ En esta sección vamos a comenzar a preparar un entorno de trabajo. Para ello ne
 
 Ingresan a la Playstore de android y buscan la aplicación `Acode` e instalan.
 
-![playstore-install-aplication](../recursos-android/playstore-app.jpeg)
+![playstore-install-aplication](./recursos/playstore-app.jpeg)
 
 Una vez abierta veran la terminal integrada:
 
-![integrated-terminal-app](../recursos-android/principal-app-terminal.jpg)
+![integrated-terminal-app](./recursos/principal-app-terminal.jpg)
 
 Cuando ingresemos a la comenzara a instalarse el emulador automaticamente, y si el proceso exitoso deberiamos ver la presentación del sistema de gestión de paquetes de Alpine linux(apk)
 
-![integrated-terminal-app](../recursos-android/terminal-apk.jpeg)
+![integrated-terminal-app](./recursos/terminal-apk.jpeg)
 
 ## Instalación de paquetes globales
 
@@ -83,4 +83,4 @@ Alpine Linux utiliza **OpenRC** como sistema de gestión de servicios. Antes de 
 
 Para conectar nuestro editor con el entorno Linux, nos posicionamos en la sección de extensiones en el panel lateral de Visual Studio Code y buscamos la extensión oficial llamada **WSL** (además de las extensiones de **Python** y **Jupyter**).
 
-[Siguiente Lección: Bash](../../../04-bash/bash.readme.md)
+[Siguiente Lección: Bash](../../04-bash/bash.readme.md)

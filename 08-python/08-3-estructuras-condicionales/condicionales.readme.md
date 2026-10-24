@@ -76,4 +76,4 @@ print(resultado)  # Salida: Aprobado
 ```
 
 [Menu Principal](../../README.md)
-[Siguiente Lección: Basicos](../bucles/bucles.readme.md)
+[Siguiente Lección: Basicos](../08-4-bucles/bucles.readme.md)

@@ -204,4 +204,4 @@ info = f"En el curso de {curso} hay {alumnos} estudiantes inscritos."
 
 [Menu Principal](../../README.md)
 
-[Siguiente Lección: Basicos](../estructuras/condicionales.readme.md)
+[Siguiente Lección: Basicos](../08-3-estructuras-condicionales/condicionales.readme.md)

@@ -76,4 +76,4 @@ print(cuadrados)  # Salida: [1, 4, 9, 16, 25]
 ```
 
 [Menu Principal](../../README.md)
-[Siguiente Lección: Basicos](../funciones/funciones.readme.md)
+[Siguiente Lección: Basicos](../08-5-funciones/funciones.readme.md)

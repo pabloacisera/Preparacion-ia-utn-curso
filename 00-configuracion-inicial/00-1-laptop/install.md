@@ -17,10 +17,10 @@ En esta sección vamos a comenzar a preparar un entorno de trabajo. Para ello ne
 
 Ingresen a `https://google.com.ar` y busquen `visual studio code`.
 
-![imagen-google-descarga-vscode](../recursos-laptop/descargar-visual-studio-code.png)
+![imagen-google-descarga-vscode](./recursos/descargar-visual-studio-code.png)
 
 Hacemos clic en:
-![boton-descarga-vscode](../recursos-laptop/boton-descarga-vscode.png)
+![boton-descarga-vscode](./recursos/boton-descarga-vscode.png)
 
 ---
 
@@ -28,7 +28,7 @@ Hacemos clic en:
 
 Abrimos la Store integrada en Windows que tenemos en la barra de tareas:
 
-![descarga-desde-store-windows](../recursos-laptop/descargar-terminal-1.png)
+![descarga-desde-store-windows](./recursos/descargar-terminal-1.png)
 
 [Descargar directamente desde la plataforma de Microsoft (Instalador MSI)](https://learn.microsoft.com/en-us/powershell/scripting/install/install-powershell-on-windows?view=powershell-7.6#msi)
 
@@ -56,11 +56,11 @@ wsl --install -d Debian
 
 Durante el proceso se les solicitará un usuario y una contraseña. Esta última es **totalmente invisible** al ser tipeada por motivos de seguridad (¡CUIDADO, avancen a ciegas pero con atención!).
 
-![tipear-usuario-y-contraseña](../recursos-laptop/user-and-password.png)
+![tipear-usuario-y-contraseña](./recursos/user-and-password.png)
 
 La salida esperada si el proceso es correcto es:
 
-![debian-instalada-ok](../recursos-laptop/debian-instalado-ok.png)
+![debian-instalada-ok](./recursos/debian-instalado-ok.png)
 
 Si el proceso anterior fue exitoso, deberíamos poder abrir nuestra consola de PowerShell, escribir el comando `wsl` y ver cómo la terminal cambia para mostrar el entorno de Linux Debian.
 
@@ -118,7 +118,7 @@ git --version && curl --version && pip3 --version
 
 Para conectar nuestro editor con el entorno Linux, nos posicionamos en la sección de extensiones en el panel lateral de Visual Studio Code y buscamos la extensión oficial llamada **WSL** (además de las extensiones de **Python** y **Jupyter**).
 
-![panel-lateral-extension](../recursos-laptop/extensiones-vscode.png)
+![panel-lateral-extension](./recursos/extensiones-vscode.png)
 
 ## Vincular ipykernel con Jupyter Notebook.
 
@@ -139,4 +139,4 @@ python3 -m ipykernel install --user --name=<nombre-del-entorno> --display-name=<
 Salida esperada: `Installed kernelspec venv in /home/kscod/.local/share/jupyter/kernels/venv`
 
 
-[Siguiente Lección: Bash](../../../04-bash/bash.readme.md)
+[Siguiente Lección: Bash](../../04-bash/bash.readme.md)

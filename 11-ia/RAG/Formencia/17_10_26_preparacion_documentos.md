@@ -8,7 +8,7 @@ Entonces vamos a partir el trabajo desde la extracción de texto desde un pdf, q
 
 *Flujo de preparación de documentos pdf*
 
-![pdf_documents_preparation_for_rag](./recursos/pdf_documents_preparation_for_rag.webp)
+![pdf_documents_preparation_for_rag](../recursos/pdf_documents_preparation_for_rag.webp)
 
 ### OCR: traductor de pixeles a texto
 

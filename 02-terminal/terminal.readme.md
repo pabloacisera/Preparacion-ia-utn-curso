@@ -8,4 +8,4 @@ Para el caso de windows posee **Powershell**, en el de linux/unix utiliza **Bash
 
 > Como vamos a usar un subsistema de windows, vamos a trabajar con ambos, pero nos enfocaremos en bash.
 
-[Siguiente Leccion: Powershell](./Powershell/powershell.readme.md)
+[Siguiente Leccion: Powershell](../03-powershell/powershell.readme.md)

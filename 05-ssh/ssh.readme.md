@@ -64,4 +64,4 @@ ssh-keygen -t ed25519 -C "tu_correo@gmail.com"
 
 El resto del procedimiento es igual que para rsa.
 
-[Siguiente Lección: Git](../Git/git.readme.md)
+[Siguiente Lección: Git](../06-git/git.readme.md)

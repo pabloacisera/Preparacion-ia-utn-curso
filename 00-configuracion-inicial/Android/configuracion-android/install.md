@@ -83,4 +83,4 @@ Alpine Linux utiliza **OpenRC** como sistema de gestión de servicios. Antes de 
 
 Para conectar nuestro editor con el entorno Linux, nos posicionamos en la sección de extensiones en el panel lateral de Visual Studio Code y buscamos la extensión oficial llamada **WSL** (además de las extensiones de **Python** y **Jupyter**).
 
-[Siguiente Lección: Bash](../../../Terminal/Bash/bash.readme.md)
+[Siguiente Lección: Bash](../../../04-bash/bash.readme.md)

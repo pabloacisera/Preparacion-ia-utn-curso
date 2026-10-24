@@ -62,4 +62,4 @@ Simularás que encontraste un error en un archivo de hace dos semanas. Lo vas a 
 - Ejercicio 3: El descarte total con Reset y Rebase (Avanzado)
 Simularás que todo lo que hiciste en las últimas dos semanas estuvo mal y querés borrarlo para arrancar de cero desde un commit viejo usando reset --hard. Luego, reordenarás tu rama de trabajo con rebase
 
-[Siguiente Lección: Github](../Github/github.readme.md)
+[Siguiente Lección: Github](../07-github/github.readme.md)

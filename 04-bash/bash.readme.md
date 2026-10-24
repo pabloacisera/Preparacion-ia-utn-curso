@@ -32,4 +32,4 @@ Un script siempre suele escribirse en un archivo porque es una operación que qu
 
 > ⚠️ **Importante:** Bash requiere que los scripts usen la extensión `.sh`. Además, para poder ser ejecutados, debemos darles permisos de ejecución en la terminal con el comando: `chmod +x <archivo.sh>`. Luego, podemos invocarlo usando `./<archivo.sh>`.
 
-[Siguiente Lección: SSH](../../Ssh/ssh.readme.md)
+[Siguiente Lección: SSH](../05-ssh/ssh.readme.md)

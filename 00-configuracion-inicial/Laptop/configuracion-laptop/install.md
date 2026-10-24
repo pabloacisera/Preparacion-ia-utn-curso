@@ -139,4 +139,4 @@ python3 -m ipykernel install --user --name=<nombre-del-entorno> --display-name=<
 Salida esperada: `Installed kernelspec venv in /home/kscod/.local/share/jupyter/kernels/venv`
 
 
-[Siguiente Lección: Bash](../../../Terminal/Bash/bash.readme.md)
+[Siguiente Lección: Bash](../../../04-bash/bash.readme.md)

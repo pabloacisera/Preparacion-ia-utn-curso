@@ -21,7 +21,7 @@ Cada carpeta tiene un `readme.md` con la teoría y una subcarpeta `ejercicios/` 
 
 ## Instalación
 
-Las dependencias de toda la sección están en [`requirements.txt`](./requirements.txt):
+Las dependencias de toda la sección están en [`requirements.txt`](../requirements.txt):
 
 ```bash
 pip install -r requirements.txt

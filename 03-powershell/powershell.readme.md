@@ -21,6 +21,6 @@ Start-Service AppXSvc
 
 ```
 
-[Siguiente Lección: Configuracion incial de dispositivo(laptop)](../../Configuracion_Inicial/Laptop/configuracion-laptop/install.md)
+[Siguiente Lección: Configuracion incial de dispositivo(laptop)](../00-configuracion-inicial/Laptop/configuracion-laptop/install.md)
 
-[Siguiente Lección: Configuracion incial de dispositivo(smartphone)](../../Configuracion_Inicial/Android/configuracion-android/install.md)
+[Siguiente Lección: Configuracion incial de dispositivo(smartphone)](../00-configuracion-inicial/Android/configuracion-android/install.md)

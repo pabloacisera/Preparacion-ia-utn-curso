@@ -139,4 +139,4 @@ def delete_user(user_id: int) -> str:
 
 
 if __name__ == "__main__":
-    my_mcp.run()
+    my_mcp.run(transport="stdio")

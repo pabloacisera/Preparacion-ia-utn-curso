@@ -42,6 +42,10 @@ Este archivo es el **hilo único**. Vas a ir leyendo por concepto, mezclando teo
 - [Oracle - MCP](./oracle-ai-fundations/into_mcp.md)
 - [Oracle - server.py](./oracle-ai-fundations/server.py)
 - [Oracle - server.ipynb](./oracle-ai-fundations/server.ipynb)
+- [Oracle - client.py: cliente MCP local](./oracle-ai-fundations/client.py)
+- [Oracle - mcp_client.ipynb: cliente MCP local en notebook](./oracle-ai-fundations/mcp_client.ipynb)
+- [Oracle - external_mcp_server.py: conexión a un MCP externo (GitHub)](./oracle-ai-fundations/external_mcp_server.py)
+- [Oracle - agent_mcp.py: agente con tools de MCP local + GitHub](./oracle-ai-fundations/agent_mcp.py)
 
 ## 8. Pendientes / Sin clasificar
 Se irán agregando los archivos nuevos de Formencia y Oracle conforme avances. **Sin moverlos.** Solo se enlazan.

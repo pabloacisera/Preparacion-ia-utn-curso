@@ -22,6 +22,8 @@ Este archivo es el **hilo único**. Vas a ir leyendo por concepto, mezclando teo
 
 ## 4. Embeddings, vectores y búsqueda vectorial
 - [11-2 - Embeddings y similitud](../../11-2-funcionamiento-interno/ejercicios/02-embeddings-y-similitud.md)
+- [Formencia - Embeddings](./Formencia/26-10-26_embeddings.md)
+- [Práctica - Integrador: lectura, segmentación por capas y embeddings](../../../Practicas/RAG/02-con-langchain/segmentation_embed.ipynb)
 - [11-5 - ¿Qué es RAG?](./readme.md)
 - [11-5 - Ejercicios](./ejercicios/)
 

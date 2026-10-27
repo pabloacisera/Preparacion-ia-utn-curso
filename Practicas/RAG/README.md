@@ -6,7 +6,7 @@
 
 | Carpeta | Uso | Notas |
 | --- | --- | --- |
-| **[01-manual/](01-manual/)** | **SIN LangChain** | Lógica pura en Python. Aquí van `segmentacion_completa.py`, `extraer_texts.ipynb` y todo lo hecho a mano para entender la mecánica. |
+| **[01-manual/](01-manual/)** | **SIN LangChain** | Lógica pura en Python. Aquí va `extraer_texts.ipynb` (extracción/lectura manual). `segmentacion_completa.py` se encuentra en `../LangChain/`. |
 | **[02-con-langchain/](02-con-langchain/)** | **CON LangChain** | Mismo flujo que `01-manual/` pero con `langchain`, `langchain_text_splitters`, etc. Comparar con el manual es la clave. |
 | **[_documentos/](./_documentos/)** | **Documentos compartidos** | PDFs, TXT, DOCX, XLSX, imágenes para usar en ambas etapas. |
 

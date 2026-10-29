@@ -36,7 +36,7 @@ Para la practica podemos usar un modelo de embedding del mismo proveedor groq qu
 
 > Importante: Si la información es privada, y por cuestiones legales o de decisión no puede salir del ambito local, no podemos usar api como la de groq u openai, podemos usar BGE-M3(transformadores con BERT) o Cohere embed-v4 que soporte español, pero la mejor version en local es `nomic-embed v2`, PERO NO ES MULTILINGUE.
 
-[Practica de embeddings sobre un documento de estructura compleja](../../../Practicas/RAG/02-con-langchain/segmentation_embed.ipynb)
+[Practica de embeddings sobre un documento de estructura compleja](./exercises/4_segment_and_embedding.py)
 
 Si bien el codigo anterior **ha funcionado**, no es aplicable a producción o a un sistema profesional, por lo siguientes motivos:
 

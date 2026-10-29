@@ -44,7 +44,7 @@
     2. [Funcionamiento interno: tokens, embeddings y vectores](./11-ia/11-2-funcionamiento-interno/readme.md)
     3. [Teoría de agentes](./11-ia/11-3-teoria-agentes/readme.md)
     4. [LLM + Agentes con LangChain](./11-ia/11-4-langchain/readme.md)
-    5. [¿Qué es RAG?](./11-ia/11-5-que-es-rag/readme.md)
+    5. [¿Qué es RAG?](./11-ia/11-5-rag/readme.md)
     6. [Agentes NoCode](./11-ia/11-6-agentes-nocode/readme.md)
 
 ### Recursos

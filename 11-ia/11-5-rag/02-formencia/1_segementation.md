@@ -12,7 +12,7 @@
 
 ## 📂 ¿Qué es la segmentación de documentos (*Chunking*) y para qué sirve?
 
-Los LLM tienen una ventana de contexto, que es la cantidad máxima de tokens que pueden procesar en una sola interacción antes de perder el hilo conductor de una conversación. Aunque las ventanas actuales admiten cientos de miles de tokens y permitirían cargar un documento entero directamente en el sistema, hacer esto genera graves ineficiencias técnicas. 
+Los LLM tienen una ventana de contexto, que es la cantidad máxima de tokens que pueden procesar en una sola interacción antes de perder el hilo conductor de una conversación. Aunque las ventanas actuales admiten cientos de miles de tokens y permitirían cargar un documento entero directamente en el sistema, hacer esto genera graves ineficiencias técnicas.
 
 Si un documento de 50 páginas trata múltiples temas y se procesa como un único bloque para generar un solo embedding, la representación matemática se satura y pierde resolución semántica. Como consecuencia, al realizar una búsqueda vectorial, el sistema recuperará un bloque masivo de información irrelevante, provocando que la respuesta del LLM sea vaga, difusa o incompleta (fenómeno conocido como *Lost in the Middle*).
 
@@ -52,7 +52,7 @@ Pero según el contenido segmentado, esto puede destruir la coherencia interna d
 
 <img src="../../../assets/imagenes/11-ia/rag/chunking-table.png" width=650>
 
-[ejercicios practicos de segmentacion fijos](../../../Practicas/LangChain/segmentation_strategies.ipynb)
+[ejercicios practicos de segmentacion fijos](./exercises/1_strategies_segmentation.py)
 
 
 ### Segmentación semántica

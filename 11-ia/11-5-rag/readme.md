@@ -103,10 +103,17 @@ El LLM no recuerda nada entre llamadas (Módulo 10). RAG resuelve la memoria **p
 
 Es el mismo mecanismo que resuelve los **datos privados**: si está indexado, el modelo puede usarlo, sin haber sido entrenado con ello.
 
+## Contenido de la unidad
+
+- [01-info/](./01-info/) — Teoría y ejercicios base: flujo de un RAG, chunking y búsqueda vectorial.
+- [02-formencia/](./02-formencia/) — Preparación de documentos, segmentación y embeddings, con las prácticas en [`02-formencia/exercises/`](./02-formencia/exercises/).
+- [03-oracle/mcp/](./03-oracle/mcp/) — Model Context Protocol (MCP) y sus prácticas.
+- [Diario Integrado Unidad 11](./DIARIO_INTEGRADO_UNIDAD_11.md) — Hilo único que mezcla teoría y práctica por concepto.
+
 ## Ejercicios
 
-- [01 — Diseccionar el flujo de un RAG](./ejercicios/01-flujo-rag.md)
-- [02 — Chunking: fragmentar un documento](./ejercicios/02-chunking.md)
-- [03 — De fragmentos a vectores y búsqueda](./ejercicios/03-busqueda-vectorial.md)
+- [01 — Diseccionar el flujo de un RAG](./01-info/01-flujo-rag.md)
+- [02 — Chunking: fragmentar un documento](./01-info/02-chunking.md)
+- [03 — De fragmentos a vectores y búsqueda](./01-info/03-busqueda-vectorial.md)
 
 [Menu Principal](../../README.md) | [Índice IA](../readme.md) | [Anterior: LLM + Agentes con LangChain ←](../11-4-langchain/readme.md) | [Siguiente: Agentes no-code →](../11-6-agentes-nocode/readme.md)

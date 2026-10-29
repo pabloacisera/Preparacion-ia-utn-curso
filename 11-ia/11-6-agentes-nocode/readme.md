@@ -54,7 +54,7 @@ Asistentes como **OpenCode** (y otros agentes de terminal o builders visuales) p
 
 ## Ejercicios
 
-- [01 — Escribir una especificación](./ejercicios/01-especificacion.md)
-- [02 — Diseñar una skill](./ejercicios/02-skill.md)
+- [01 — Escribir una especificación](./info/01-especificacion.md)
+- [02 — Diseñar una skill](./info/02-skill.md)
 
-[Menu Principal](../../README.md) | [Índice IA](../readme.md) | [Anterior: ¿Qué es RAG? ←](../11-5-que-es-rag/readme.md) | [Siguiente: Índice principal →](../../README.md)
+[Menu Principal](../../README.md) | [Índice IA](../readme.md) | [Anterior: ¿Qué es RAG? ←](../11-5-rag/readme.md) | [Siguiente: Índice principal →](../../README.md)

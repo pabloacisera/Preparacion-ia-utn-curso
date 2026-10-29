@@ -46,10 +46,10 @@ Las sesiones MCP son persistentes y con estado, desarrollándose a través de cu
 Representa y las trasferencia de información estructurada, a diferencia de una api rest que puede ser implementada de muchas maneras
 
 
-![format json rpc request](../../../assets/imagenes/11-ia/rag/jsonrpcformat.webp)
+![format json rpc request](../../../../assets/imagenes/11-ia/rag/jsonrpcformat.webp)
 > Host request -> server
 
-![format json rpc result](../../../assets/imagenes/11-ia/rag/jsonrpcformat_b.webp)
+![format json rpc result](../../../../assets/imagenes/11-ia/rag/jsonrpcformat_b.webp)
 > Server result -> host
 
 Cuando el servidor mcp es local(proceso secundario en la misma maquina), el estandar de comunicacón es stdin/stdout. Si el servidor es remoto, usamos SHT(Streameable HTTP Transport, la conexión se da mediante un metodo post y el descubrimiento mediante SSE streaming). Ambos sistema usan el mismo protocolp JSON-RPC, asi que podemos usar cualquiera de las dos capa de transporte.
@@ -230,4 +230,4 @@ npm -v
 
 Una vez que hayamos podido ingresar a la web de prueba, hacemos click en "Connect"(puede tardar segun velocidad de proecesador y memoria), cuando marque conectado vamos a la pestaña tools > list tools, y veremos las herramientas que el mcp identifico.
 
-<img src="../../../assets/imagenes/11-ia/rag/fastmcp-inspector.png" width="650">
+<img src="../../../../assets/imagenes/11-ia/rag/fastmcp-inspector.png" width="650">

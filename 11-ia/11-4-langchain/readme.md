@@ -77,6 +77,10 @@ Los mencionamos para ubicarnos; en el curso trabajamos con **LangChain**.
 
 ## Ejercicios
 
-- [01 — Prompt templates, cadenas y memoria](./ejercicios/01-prompt-cadenas-memoria.md)
+- [01 — Prompt templates, cadenas y memoria](./exercises/01-prompt-cadenas-memoria.md)
 
-[Menu Principal](../../README.md) | [Índice IA](../readme.md) | [Anterior: Teoría de agentes ←](../11-3-teoria-agentes/readme.md) | [Siguiente: ¿Qué es RAG? →](../11-5-que-es-rag/readme.md)
+## Material complementario
+
+- [Integración con LangChain](./into_langchain.md)
+
+[Menu Principal](../../README.md) | [Índice IA](../readme.md) | [Anterior: Teoría de agentes ←](../11-3-teoria-agentes/readme.md) | [Siguiente: ¿Qué es RAG? →](../11-5-rag/readme.md)

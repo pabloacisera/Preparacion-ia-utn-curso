@@ -13,12 +13,12 @@ model = init_chat_model(groq_model, model_provider="groq")  # type: ignore
 
 
 async def main():
-    base = Path("/home/kscod/Practicas/Preparacion-ia-utn-curso")
+    base_path = Path("/home/kscod/Practicas/Preparacion-ia-utn-curso")
     server_path = (
-        base / "11-ia" / "11-5-que-es-rag" / "oracle-ai-fundations" / "server.py"
+        base_path / "11-ia" / "11-5-rag" / "03-oracle" / "mcp" / "local_server.py"
     )
-    server_dir = base / "11-ia" / "11-5-que-es-rag" / "oracle-ai-fundations"
-    venv_python = base / "venv" / "bin" / "python3"
+    venv_python = base_path / "venv" / "bin" / "python3"
+    server_dir = base_path / "11-ia" / "11-5-rag" / "03-oracle"
 
     client = MultiServerMCPClient(
         {  # type: ignore
@@ -82,7 +82,7 @@ async def main():
     print("*" * 50)
     print("")
     await run_agent(
-        "Listame los repositorio que tengo publicos en mi plataforma de github, y cuenta los repositorios que tengo como privado."
+        "Listame los repositorio que tengo publicos en mi plataforma de github bajo el usuario pabloacisera, y cuenta los repositorios que tengo como privado."
     )
 
 

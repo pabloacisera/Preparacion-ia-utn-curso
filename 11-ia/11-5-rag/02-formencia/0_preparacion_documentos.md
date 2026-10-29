@@ -38,4 +38,4 @@ Los documentos extensos suelen contener cientos de páginas, pero no todas son r
 
 # Pipeline Injestion
 
-[Aplicación para extraer información](../../../Practicas/LangChain/extraer_texts.ipynb)
+[Aplicación para extraer información](./exercises/0_extraction_text.py)

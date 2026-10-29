@@ -8,9 +8,11 @@ async def main():
     base_path = Path("/home/kscod/Practicas/Preparacion-ia-utn-curso")
 
     # 2. Construimos de forma limpia las rutas del servidor y del ejecutable de Python
-    server_path = base_path / "11-ia" / "11-5-que-es-rag" / "oracle-ai-fundations" / "server.py"
+    server_path = (
+        base_path / "11-ia" / "11-5-rag" / "03-oracle" / "mcp" / "local_server.py"
+    )
     venv_python = base_path / "venv" / "bin" / "python3"
-    server_dir = base_path / "11-ia" / "11-5-que-es-rag" / "oracle-ai-fundations"
+    server_dir = base_path / "11-ia" / "11-5-rag" / "03-oracle"
 
     print(f"Usando Python del entorno: {venv_python}")
     print(f"Cargando servidor desde: {server_path}")
@@ -19,7 +21,9 @@ async def main():
     client = MultiServerMCPClient(
         {
             "db_queries": {
-                "command": str(venv_python),  # <--- Ahora sí ejecutará con tus librerías instaladas
+                "command": str(
+                    venv_python
+                ),  # <--- Ahora sí ejecutará con tus librerías instaladas
                 "args": [str(server_path)],
                 "transport": "stdio",
                 # ACLARACIÓN: Le indicamos dónde correr para que SQLite cree el .db en la carpeta correcta

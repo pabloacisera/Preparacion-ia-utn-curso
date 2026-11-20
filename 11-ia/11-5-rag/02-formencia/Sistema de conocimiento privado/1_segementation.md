@@ -26,7 +26,7 @@ Sin embargo, el diseño de la segmentación tiene un lado crítico:
 
 *Repaso Flujo básico(ingesta/consulta)*
 
-<img src="../../../assets/imagenes/11-ia/11-1-flujo-rag/flujo-basico-rag.png" width="750">
+<img src="../../../../assets/imagenes/11-ia/11-1-flujo-rag/flujo-basico-rag.png" width="750">
 
 *Resumiendo:* La segmentación cumple dos funciones básicas, optimización en la utilización de tokens y precisión en la recuperación y contexto de la respuesta. Incluso si tu documento cabe en la ventana del modelo, segmentarlo mejora la precisión. Un fragmento de 256 tokens sobre un tema concreto siempre será más útil que un vector de 8000 tokens que intenta abarcarlo todo, además de que nos aseguramos que no perdemso contexto.
 
@@ -50,9 +50,9 @@ Pero según el contenido segmentado, esto puede destruir la coherencia interna d
 
 **Cuadro de Segementacion Recomendado**
 
-<img src="../../../assets/imagenes/11-ia/rag/chunking-table.png" width=650>
+<img src="../../../../assets/imagenes/11-ia/rag/chunking-table.png" width=650>
 
-[ejercicios practicos de segmentacion fijos](./exercises/1_strategies_segmentation.py)
+[ejercicios practicos de segmentacion fijos](../exercises/1_strategies_segmentation.py)
 
 
 ### Segmentación semántica
@@ -63,4 +63,4 @@ El coste computacional es más alto porque requiere incrustar y comparar múltip
 
 *Resultado segmentación semántica*
 
-<img src="../../../assets/imagenes/11-ia/rag/resultado-segmentacion-semantica.png" width="650">
+<img src="../../../../assets/imagenes/11-ia/rag/resultado-segmentacion-semantica.png" width="650">

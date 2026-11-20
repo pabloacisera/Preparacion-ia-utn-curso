@@ -106,7 +106,7 @@ Es el mismo mecanismo que resuelve los **datos privados**: si está indexado, el
 ## Contenido de la unidad
 
 - [01-info/](./01-info/) — Teoría y ejercicios base: flujo de un RAG, chunking y búsqueda vectorial.
-- [02-formencia/](./02-formencia/) — Preparación de documentos, segmentación y embeddings, con las prácticas en [`02-formencia/exercises/`](./02-formencia/exercises/).
+- [02-formencia/](./02-formencia/) — Teoría en [`Sistema de conocimiento privado/`](./02-formencia/Sistema%20de%20conocimiento%20privado/) y prácticas en [`02-formencia/exercises/`](./02-formencia/exercises/).
 - [03-oracle/mcp/](./03-oracle/mcp/) — Model Context Protocol (MCP) y sus prácticas.
 - [Diario Integrado Unidad 11](./DIARIO_INTEGRADO_UNIDAD_11.md) — Hilo único que mezcla teoría y práctica por concepto.
 

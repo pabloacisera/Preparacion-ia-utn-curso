@@ -16,7 +16,7 @@ Su utilidad radíca en la posibilidad de comparar embedding a travéz la similit
 - Similitud = 0 (Ángulo de 90°): Las flechas son perpendiculares. No hay ninguna relación entre los textos (ej. "El desarrollo de software" y "La receta de la pizza").
 - Similitud = -1 (Ángulo de 180°): Las flechas apuntan en direcciones opuestas. Son conceptos totalmente contrarios (aunque en procesamiento de texto con IA, los resultados suelen oscilar más bien entre 0 y 1).
 
-<img src="../../../assets/imagenes/11-ia/rag/similitud_de_coseno_explicacion.webp" width="650">
+<img src="../../../../assets/imagenes/11-ia/rag/similitud_de_coseno_explicacion.webp" width="650">
 
 Otra cosa importante a tener en cuenta es ¿que será objeto de embeddings?, ¿serán palabras, frases u oraciones?.
 
@@ -26,7 +26,7 @@ Piensa en las palabras “rey” y “reina”. En un espacio de embeddings bien
 
 *Flujo desde chunks hasta embedding*:
 
-<img src="../../../assets/imagenes/11-ia/rag/proceso-chunk-a-embeddings.webp" witdh="450">
+<img src="../../../../assets/imagenes/11-ia/rag/proceso-chunk-a-embeddings.webp" witdh="450">
 
 Una vez que todos los chunks están representados como vectores, la relevancia de un documento para una consulta se calcula con funciones de distancia. Las dos métricas más utilizadas son la distancia euclidiana (la longitud del segmento recto que une dos puntos) y la similitud del coseno (el ángulo entre los vectores). La similitud del coseno es especialmente popular en tareas de recuperación porque normaliza la longitud de los documentos: ignora la magnitud y se centra en la orientación, evitando que los textos más largos dominen la comparación.
 
@@ -36,7 +36,7 @@ Para la practica podemos usar un modelo de embedding del mismo proveedor groq qu
 
 > Importante: Si la información es privada, y por cuestiones legales o de decisión no puede salir del ambito local, no podemos usar api como la de groq u openai, podemos usar BGE-M3(transformadores con BERT) o Cohere embed-v4 que soporte español, pero la mejor version en local es `nomic-embed v2`, PERO NO ES MULTILINGUE.
 
-[Practica de embeddings sobre un documento de estructura compleja](./exercises/4_segment_and_embedding.py)
+[Practica de embeddings sobre un documento de estructura compleja](../exercises/4_segment_and_embedding.py)
 
 Si bien el codigo anterior **ha funcionado**, no es aplicable a producción o a un sistema profesional, por lo siguientes motivos:
 

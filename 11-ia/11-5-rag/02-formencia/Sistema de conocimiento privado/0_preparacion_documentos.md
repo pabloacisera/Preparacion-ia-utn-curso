@@ -8,7 +8,7 @@ Entonces vamos a partir el trabajo desde la extracción de texto desde un pdf, q
 
 *Flujo de preparación de documentos pdf*
 
-![pdf_documents_preparation_for_rag](../../../assets/imagenes/11-ia/rag/pdf_documents_preparation_for_rag.webp)
+![pdf_documents_preparation_for_rag](../../../../assets/imagenes/11-ia/rag/pdf_documents_preparation_for_rag.webp)
 
 ### OCR: traductor de pixeles a texto
 
@@ -38,4 +38,4 @@ Los documentos extensos suelen contener cientos de páginas, pero no todas son r
 
 # Pipeline Injestion
 
-[Aplicación para extraer información](./exercises/0_extraction_text.py)
+[Aplicación para extraer información](../exercises/0_extraction_text.py)

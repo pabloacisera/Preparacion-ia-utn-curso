@@ -12,18 +12,20 @@ Este archivo es el **hilo único**. Vas a ir leyendo por concepto, mezclando teo
 - [11-2 - Ejercicios](../11-2-funcionamiento-interno/ejercicios/)
 
 ## 2. Preparación e ingesta de documentos
-- [Formencia - Preparación de documentos](./02-formencia/0_preparacion_documentos.md)
+- [Formencia - Preparación de documentos](./02-formencia/Sistema%20de%20conocimiento%20privado/0_preparacion_documentos.md)
 - [Práctica - Extraer textos](./02-formencia/exercises/0_extraction_text.py)
 - [Documentos de prueba](./02-formencia/exercises/_Documentos/)
 
 ## 3. Chunking, segmentación y lógica manual
-- [Formencia - Segmentación](./02-formencia/1_segementation.md)
+- [Formencia - Segmentación](./02-formencia/Sistema%20de%20conocimiento%20privado/1_segementation.md)
 - [Práctica - Segmentación completa (sin LangChain)](./02-formencia/exercises/2_segmentartion.py)
 
 ## 4. Embeddings, vectores y búsqueda vectorial
 - [11-2 - Embeddings y similitud](../11-2-funcionamiento-interno/ejercicios/02-embeddings-y-similitud.md)
-- [Formencia - Embeddings](./02-formencia/2_embeddings.md)
+- [Formencia - Embeddings](./02-formencia/Sistema%20de%20conocimiento%20privado/2_embeddings.md)
 - [Práctica - Integrador: lectura, segmentación por capas y embeddings](./02-formencia/exercises/4_segment_and_embedding.py)
+- [Formencia - Bases de datos vectoriales](./02-formencia/Sistema%20de%20conocimiento%20privado/3_vectorial_databases.md)
+- [Práctica - Conexión a base vectorial](./02-formencia/exercises/5_vectorial_connection.py)
 - [11-5 - ¿Qué es RAG?](./readme.md)
 - [11-5 - Ejercicios](./01-info/)
 
@@ -45,5 +47,11 @@ Este archivo es el **hilo único**. Vas a ir leyendo por concepto, mezclando teo
 - [Oracle - external_api.py: conexión a un MCP externo (GitHub)](./03-oracle/mcp/external_api.py)
 - [Oracle - agent_mcp.py: agente con tools de MCP local + GitHub](./03-oracle/mcp/agent_mcp.py)
 
-## 8. Pendientes / Sin clasificar
+## 8. Generación, prompts, evaluación y seguridad
+- [Formencia - Generación de respuestas](./02-formencia/Sistema%20de%20conocimiento%20privado/4_response_generation.md)
+- [Formencia - Ingeniería de prompts](./02-formencia/Sistema%20de%20conocimiento%20privado/5_prompts_engineering.md)
+- [Formencia - Evaluación de métricas](./02-formencia/Sistema%20de%20conocimiento%20privado/metrics.md)
+- [Formencia - Seguridad](./02-formencia/Sistema%20de%20conocimiento%20privado/security.md)
+
+## 9. Pendientes / Sin clasificar
 Se irán agregando los archivos nuevos de Formencia y Oracle conforme avances. **Sin duplicarlos.** Solo se enlazan.

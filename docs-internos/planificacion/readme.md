@@ -8,6 +8,9 @@
 - **[Ruta-del-Curso.md](./Ruta-del-Curso.md):** la "escalera" del recorrido (de una frase a una aplicación con IA), qué está hecho y qué falta, y las decisiones abiertas del programa.
 - **[Schedule.md](./Schedule.md):** cronograma de preparación del curso y de los entregables.
 - **[Topics.md](./Topics.md):** filosofía pedagógica, cursos de certificación de referencia y recursos para equipos de bajos recursos.
+- **[Programa_Curricular.md](./Programa_Curricular.md):** programa completo del curso (24 clases, 48 h + 48 h, 3 meses), con objetivos, temario, proyecto final, evaluación y estado del material.
+- **[Propuesta_Resumida.md](./Propuesta_Resumida.md):** versión de una página para el correo de postulación, con nombre comercial, diferenciales y formato.
+- **[Guion_Video.md](./Guion_Video.md):** guion del minivideo de presentación y guía de producción, demo y envío.
 
 ## Filosofía en una frase
 

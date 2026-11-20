@@ -2,23 +2,25 @@
 
 ## Datos Generales
 
-- **Nombre del curso:** *Agentes de IA y RAG: de la teoría a la práctica*
-- **Subtítulo:** *Aprende a darle el contexto correcto a un agente de IA con tus propios documentos, usando opencode*
-- **Modalidad:** Curso de Extensión Universitaria (Presencial)
-- **Día y horario:** Sábados - 3 horas por clase
-- **Duración:** 5 meses
-- **Total de clases:** 20 clases
-- **Carga horaria total:** 60 horas presenciales
-- **Práctica entre semana:** Recomendado (1 - 2 horas)
-- **Público destinatario:** Todo público. Se integra con lo ya visto en talleres de Python, Terminal/Linux, pero no los repite en profundidad.
-
+- **Nombre comercial:** *Asistente IA a medida*
+- **Frase de venta:** *Tus documentos, tus reglas*
+- **Nombre académico:** *Agentes de IA con LangChain y RAG: construí tu herramienta*
+- **Subtítulo:** *Del prototipo no-code al agente con documentos privados, herramientas propias y despliegue*
+- **Modalidad:** Curso de Extensión Universitaria (presencial o híbrido)
+- **Duración:** 3 meses / 12 semanas
+- **Total de clases:** 24 clases
+- **Carga horaria:** 48 horas teórico-prácticas + 48 horas de autoestudio
+- **Frecuencia:** 2 clases por semana, de 2 horas cada una
+- **Inicio de clases:** marzo de 2027
+- **Público destinatario:** profesionales, docentes, técnicos, administrativos, emprendedores y estudiantes avanzados. No requiere experiencia previa en IA. Python y SQL se nivelan en las primeras clases.
+- **Cupo sugerido:** 15 alumnos
+- **Certificación:** UTN-FRD e Instituto Linux
 
 ## Idea Central
 
-El objetivo del curso **no** es enseñar Python, Linux, Git o APIs a fondo. Es **enseñar ese ecosistema justo lo necesario para entenderlo y utilizarlo con un único fin: crear una herramienta con RAG + agente utilizando opencode**.
+El objetivo del curso **no** es enseñar Python, Linux, Git o APIs a fondo. Es **enseñar ese ecosistema justo lo necesario para entenderlo y utilizarlo con un único fin: crear un agente de IA con RAG, herramientas propias y MCP, tanto con código como por la vía no-code**.
 
-Todo lo que se vea desde el módulo `00` hasta el `11` se da con esa mirada: *"¿Para qué me sirve esto para armar mi RAG, vincularlo a mi agente, crear e integrar mis MCPs y configurarlo con opencode?"*
-
+Todo lo que se vea desde el módulo `00` hasta el `11` se da con esa mirada: *"¿Para qué me sirve esto para armar mi agente, darle el contexto correcto, crear mis herramientas, integrar mis MCPs y dejarlo funcionando?"*
 
 ## Justificación
 
@@ -26,102 +28,160 @@ Las empresas necesitan aprovechar sus propios documentos, manuales, procedimient
 
 El **RAG (Retrieval Augmented Generation)** es hoy la solución más viable, económica, segura y aplicable para lograrlo. Para poder armarlo correctamente, entender sus límites, su fiabilidad y su seguridad, es necesario conocer lo justo del ecosistema que lo rodea.
 
-Este curso integra ese ecosistema completo para formar personas capaces de **diseñar, construir, validar y asegurar un sistema RAG confiable, vincularlo a un agente, crear sus propios MCPs y convertirlo en una herramienta funcional con opencode CLI**, todo por API y entendiendo qué hay bajo el capó.
+Este curso integra ese ecosistema completo para formar personas capaces de **diseñar, construir, validar y asegurar un agente con RAG confiable, crear sus propias herramientas, integrar servidores MCP y convertirlo en una herramienta funcional**, todo por API y entendiendo qué hay bajo el capó.
 
+La ventaja del curso está en tres puntos:
+
+1. **Velocidad de desarrollo:** con LangChain y la vía no-code, el alumno pasa de la idea al prototipo en horas, no en semanas.
+2. **Baja curva de aprendizaje:** no se enseña a programar desde cero ni a entrenar modelos. Se enseña lo justo para entender y construir.
+3. **Resultado concreto:** el alumno termina con un agente funcional, con un contexto bien determinado y con herramientas personalizadas: PDF, DOCX, XLSX, OCR, voz y APIs.
 
 ## Diferenciación con otros talleres
 
 | Taller Existente | Qué cubre | Diferenciación con este curso |
 | :-- | :-- | :-- |
-| **Oracle** | LangChain, agentes a nivel código y bases de datos vectoriales en profundidad. | Complementario. Oracle va por la implementación a nivel código con LangChain. Este curso va por la **construcción de un RAG confiable, su vinculación al agente, creación e integración de MCPs propios y aplicación práctica con opencode CLI**. |
-| **Python / Terminal / Linux / Servidores** | Base técnica por separado. | Se integran con un propósito único. No se enseña en profundidad, se enseña lo justo para moverse por CLI, entender archivos, leer JSON, consumir APIs y trabajar con `opencode`. |
+| **Oracle** | LangChain, agentes a nivel código y bases de datos vectoriales en profundidad. | Complementario. Oracle va por la implementación a nivel código con LangChain. Este curso integra el ecosistema completo y suma la vía no-code, MCP y despliegue. |
+| **Python / Terminal / Linux / Servidores** | Base técnica por separado. | Se integran con un propósito único. No se enseña en profundidad, se enseña lo justo para moverse por CLI, entender archivos, leer JSON, consumir APIs y trabajar con agentes. |
 | **Machine Learning / Deep Learning** | Entrenamiento de modelos. | Fuera del alcance. Este curso es netamente de **consumo, construcción, configuración y aplicación práctica**. No hay reentrenamiento ni fine-tuning. |
-
+| **Agentes no-code** | Herramientas visuales o de terminal. | Este curso combina no-code con comprensión del funcionamiento interno y código cuando hace falta. |
 
 ## Objetivo General
 
-Al finalizar el curso, el alumno será capaz de **crear su propia herramienta con RAG + agente utilizando opencode**, entendiendo lo justo del ecosistema necesario para hacerlo: configurar su entorno, consumir modelos por API, construir un RAG confiable con conocimiento privado, vincularlo al agente, crear e integrar sus propios MCPs y dejarlo funcional con una configuración clara.
+Al finalizar el curso, el alumno será capaz de **crear su propia herramienta con RAG + agente**, entendiendo lo justo del ecosistema necesario para hacerlo: configurar su entorno, consumir modelos por API, construir un RAG confiable con conocimiento privado, vincularlo al agente, crear e integrar sus propios MCPs y dejarlo funcional con una configuración clara.
 
+## Resultados de Aprendizaje
+
+Al finalizar, el alumno podrá:
+
+1. Entender el ecosistema LLM: tokens, contexto, embeddings, costo y latencia.
+2. Consumir modelos por API y controlar prompts, roles, parámetros y errores.
+3. Preparar documentos reales (PDF, DOCX, XLSX, imágenes) y construir un pipeline RAG.
+4. Operar bases vectoriales y aplicar búsqueda vectorial e híbrida.
+5. Crear agentes con LangChain, tools propias y guardrails.
+6. Crear servidores MCP y conectarlos a un agente.
+7. Prototipar agentes no-code con specs, skills y opencode.
+8. Desplegar un servicio básico con FastAPI, Docker y control de costos.
 
 ## Estructura por Bloques
 
-| Bloque | Módulos del repositorio | Propósito |
-| :-- | :-- | :-- |
-| **Bloque 1: Entorno, CLI y Versionado** | `00 - Configuración Inicial`, `02 - Terminal`, `03 - PowerShell`, `04 - Bash`, `05 - SSH`, `06 - Git`, `07 - GitHub` | Lo justo para configurar el entorno, moverse por CLI, conectarse por SSH, versionar y preparar todo para trabajar con `opencode`. |
-| **Bloque 2: Lógica, Python y Fundamentos** | `01 - Fundamentos de Programación`, `08 - Python` | Bases mínimas para entender lógica, leer código, archivos y estructuras. Enfoque: saber para entender, no para volverse desarrollador. |
-| **Bloque 3: APIs y SQL** | `09 - API`, `10 - SQL` | Entender APIs, JSON, consumo por API (clave para modelos), headers, body y lo comprensivo de SQL. |
-| **Bloque 4: Agentes, RAG y Aplicación con opencode** | `11 - IA` (11-1 a 11-6) | Núcleo del curso. Fundamentos sólidos de LLM, RAG confiable, agentes, vinculación RAG-agente, MCPs, configuración y aplicación con `opencode`. |
-
+| Bloque | Clases | Horas | Propósito |
+| :-- | :--: | :--: | :-- |
+| **Bloque 1: Entorno, CLI y Python esencial** | 1–4 | 8 h | Configurar el entorno, moverse por CLI, versionar y leer código |
+| **Bloque 2: APIs, SQL y datos** | 5–8 | 8 h | Entender APIs, JSON, consumo por API y SQL comprensivo |
+| **Bloque 3: LLMs, agentes y LangChain** | 9–13 | 10 h | Pasar del modelo al agente y orquestar con LangChain |
+| **Bloque 4: RAG, documentos y bases vectoriales** | 14–19 | 12 h | Construir un RAG confiable con conocimiento privado |
+| **Bloque 5: Herramientas, MCP, no-code e infraestructura** | 20–24 | 10 h | Convertirlo en una herramienta real y desplegable |
+| **Total** | **24** | **48 h** | |
 
 ## Temario General Clase por Clase
 
 | Clase | Bloque | Tema | Objetivo |
-| :-- | :-- | :-- | :-- |
-| **Clase 1** | Bloque 1 | *Configuración inicial y acercamiento al CLI* | Configurar entorno. Familiarización con terminal y primer contacto con `opencode`. |
-| **Clase 2** | Bloque 1 | *Terminal, PowerShell y Bash (lo necesario)* | Navegación, carpetas, archivos, permisos básicos y uso práctico enfocado a `opencode`. |
-| **Clase 3** | Bloque 1 | *SSH, Git y GitHub* | Versionado, clonado, commits. Aplicado al proyecto que irá creciendo clase a clase. |
-| **Clase 4** | Bloque 2 | *Fundamentos de programación aplicados* | Lógica, variables, condicionales, bucles. Justo lo necesario para leer y entender. |
-| **Clase 5** | Bloque 2 | *Python aplicado al ecosistema* | Lectura/escritura de archivos, estructuras, JSON. Enfoque 100% práctico para lo que se usará después. |
-| **Clase 6** | Bloque 3 | *APIs, JSON y consumo por API* | ¿Qué es una API? Peticiones, headers, body, respuestas. Consumo por API (sin Ollama). |
-| **Clase 7** | Bloque 3 | *SQL lo justo para entenderlo* | Comprensión de tablas, relaciones y consultas básicas. Enfoque comprensivo. |
-| **Clase 8** | Bloque 4 - 11-1 | *Introducción a los LLMs* | ¿Qué es un LLM? ¿Cómo funciona a grandes rasgos? Consumo por API y visión general. |
-| **Clase 9** | Bloque 4 - 11-2 | *Tokens, ventana de contexto, embeddings y similitud vectorial* | **Fundamental.** Base para entender chunking, recuperación y funcionamiento del RAG. |
-| **Clase 10** | Bloque 4 - 11-5 | *Fundamentos de RAG, arquitectura y valor en entornos privados* | ¿Qué es RAG? Componentes, flujo de datos, por qué evita reentrenar y cuándo aplicarlo. |
-| **Clase 11** | Bloque 4 - 11-5 | *Preparación de documentos y chunking* | Lectura de documentos reales, limpieza, segmentación (chunking), solapamiento y errores a evitar. |
-| **Clase 12** | Bloque 4 - 11-5 | *Embeddings, bases de datos vectoriales, indexación y recuperación* | Representación vectorial, indexación, búsqueda vectorial, búsqueda híbrida y reranking. |
-| **Clase 13** | Bloque 4 - 11-5 | *Generación, ingeniería de prompts para RAG* | Rol del LLM en RAG, prompts orientados a RAG, control de respuesta y reducción de alucinaciones. |
-| **Clase 14** | Bloque 4 - 11-5 | *Evaluación, fiabilidad, seguridad y privacidad en RAG* | Métricas, validación, riesgos, datos sensibles y buenas prácticas para RAG confiable. |
-| **Clase 15** | Bloque 4 - 11-3/11-4 | *Teoría de agentes + ejemplo ilustrativo mínimo* | ¿Qué necesita un agente para ser útil? Contexto + herramientas + reglas. Conexión RAG-Agente. Ejemplo mínimo (sin profundizar en LangChain). |
-| **Clase 16** | Bloque 4 - 11-5 | *Construcción de un RAG confiable desde cero (por API)* | Práctica integrada: documentos, chunking, embeddings, base vectorial, recuperación, generación. Todo por API. |
-| **Clase 17** | Bloque 4 - 11-6 | *Vinculando RAG al agente y creando MCPs propios* | **Clave.** Vincular el RAG construido al agente. Crear un MCP propio, integrarlo y probarlo. |
-| **Clase 18** | Bloque 4 - 11-6 | *opencode CLI: AGENTS.md, specs, skills, subagentes* | Configuración por API, `AGENTS.md`, `specs`, `skills`, `subagentes`. Aplicado desde la documentación oficial de `opencode`. |
-| **Clase 19** | Bloque 4 - 11-6 | *Integración completa: RAG + agente + MCP + opencode* | Integración total. Armar la herramienta funcional: RAG vinculado, MCP creado, agente configurado, reglas y contexto definidos. |
-| **Clase 20** | Bloque 4 - Proyecto Final | *Proyecto integrador, presentación y cierre* | Presentación de la herramienta funcional creada por cada alumno (RAG + agente + MCP + opencode). Corrección, cierre y entrega. |
+| :--: | :-- | :-- | :-- |
+| **Clase 1** | Bloque 1 | *Entorno y primer contacto* | Configurar Linux/WSL, VS Code, terminal, opencode, `.env`, API keys y Git. |
+| **Clase 2** | Bloque 1 | *Terminal, archivos y SSH* | Navegación, carpetas, archivos, permisos, Git y GitHub. |
+| **Clase 3** | Bloque 1 | *Python I* | Lógica, variables, condicionales, bucles y funciones. |
+| **Clase 4** | Bloque 1 | *Python II* | `venv`, JSON, archivos, `pypdf`, `python-docx` y `openpyxl`. |
+| **Clase 5** | Bloque 2 | *APIs* | HTTP, JSON, headers, body, métodos, `curl`, errores y versionado. |
+| **Clase 6** | Bloque 2 | *APIs con Python* | `requests`/`httpx`, rate limits, streaming y costos. |
+| **Clase 7** | Bloque 2 | *SQL* | Tablas, PK/FK, tipos, CRUD, `WHERE` y `JOIN`. |
+| **Clase 8** | Bloque 2 | *SQL aplicado* | Migraciones, esquema integrador y diferencia con bases vectoriales. |
+| **Clase 9** | Bloque 3 | *Introducción a los LLMs* | Tokens, contexto, prompts, roles, parámetros y alucinaciones. |
+| **Clase 10** | Bloque 3 | *Funcionamiento interno* | Tokenización, embeddings, similitud, predicción y ONNX. |
+| **Clase 11** | Bloque 3 | *Teoría de agentes* | Chatbot vs workflow vs agente, bucle, tools, tool calling, ReAct, guardrails y seguridad. |
+| **Clase 12** | Bloque 3 | *LangChain I* | Prompts, chains, memoria y parsers. |
+| **Clase 13** | Bloque 3 | *LangChain II* | Agentes con tools, múltiples herramientas, trazas y manejo de errores. |
+| **Clase 14** | Bloque 4 | *Fundamentos de RAG* | Arquitectura, indexación vs consulta, RAG vs fine-tuning y cuándo aplicarlo. |
+| **Clase 15** | Bloque 4 | *Preparación de documentos* | PDF, DOCX, XLSX, OCR, limpieza, metadatos, extracción híbrida y privacidad. |
+| **Clase 16** | Bloque 4 | *Chunking* | Estrategias fija, recursiva y semántica; overlap, tamaño y errores. |
+| **Clase 17** | Bloque 4 | *Bases vectoriales I* | Embeddings, dimensiones, ANN, top-k, Chroma y FAISS. |
+| **Clase 18** | Bloque 4 | *Bases vectoriales II* | pgvector/Postgres, búsqueda híbrida (BM25), reranking, persistencia y actualización. |
+| **Clase 19** | Bloque 4 | *RAG con LangChain* | Pipeline completo, retrievers, prompt aumentado, evaluación y seguridad. |
+| **Clase 20** | Bloque 5 | *Herramientas propias* | Tools de PDF/DOCX/XLSX, OCR, voz (STT/TTS), APIs, esquemas y docstrings. |
+| **Clase 21** | Bloque 5 | *MCP* | Host/client/server, primitivas, JSON-RPC, transporte, servidor propio con FastMCP y SQLite. |
+| **Clase 22** | Bloque 5 | *Integración* | Agente + MCP + RAG, `MultiServerMCPClient`, tools locales y externas (GitHub). |
+| **Clase 23** | Bloque 5 | *No-code* | Specs, skills (`SKILL.md`), opencode, `AGENTS.md`, subagentes y permisos. |
+| **Clase 24** | Bloque 5 | *Infraestructura y cierre* | FastAPI, Docker, auth, logs, observabilidad, costos y presentación del proyecto final. |
 
+## Proyecto Final
+
+**Agente de conocimiento privado con herramientas propias.** Debe incluir:
+
+- Ingesta de al menos 3 documentos (PDF, DOCX, XLSX o escaneados con OCR).
+- Pipeline RAG con chunking, embeddings y base vectorial.
+- Agente LangChain con al menos 2 herramientas propias (archivos, SQL, voz o API).
+- Un servidor MCP propio conectado al agente.
+- Interfaz mínima: CLI o API con FastAPI.
+- `README`, `.env.example` y demo de 3 minutos.
+- Evaluación con 5 preguntas de prueba, revisión de respuestas y análisis de seguridad.
+
+## Evaluación
+
+| Instancia | Peso | Qué se evalúa |
+| :-- | :--: | :-- |
+| Ejercicios semanales | 20 % | Ejecución y comprensión de cada bloque |
+| Parcial integrador | 30 % | RAG funcionando con documentos reales |
+| Proyecto final + defensa | 50 % | Agente completo, herramientas, MCP, despliegue y explicación |
+| **Aprobación** | **70 %** | |
 
 ## Herramientas y Tecnologías a Enseñar
 
 | Herramienta/Tecnología | Uso |
 | :-- | :-- |
-| **opencode (CLI)** | Herramienta principal. Configuración, `AGENTS.md`, `specs`, `skills`, `subagentes`, MCPs. |
-| **LLMs por API** | Consumo exclusivo por API. Sin Ollama. |
-| **Terminal (Bash/PowerShell)** | Lo justo: navegación, archivos, ejecución y trabajo con `opencode`. |
-| **Git & GitHub** | Versionado del proyecto final. |
-| **SSH** | Lo justo para entender autenticación y conexión. |
-| **Python** | Aplicado únicamente lo necesario para entender el RAG. |
-| **APIs / JSON** | Consumo, headers, body, respuestas. Fundamental. |
-| **Embeddings & Bases de Datos Vectoriales** | Lo necesario: indexación, storage, búsqueda vectorial, híbrida, reranking. |
-| **Chunking** | Segmentación, solapamiento, criterios para una recuperación confiable. |
-| **MCPs (Creación e integración)** | Crear MCPs propios, integrar junto al RAG al agente. |
-| **Evaluación / Seguridad / Privacidad** | Lo justo para construir a RAG confiable. |
-
+| **opencode (CLI)** | Agente de terminal, configuración, `AGENTS.md`, specs, skills, subagentes y MCPs. |
+| **LLMs por API** | Consumo exclusivo por API (Groq y Gemini). |
+| **Terminal (Bash/PowerShell)** | Navegación, archivos, ejecución y trabajo con agentes. |
+| **Git & GitHub** | Versionado del proyecto final y portfolio. |
+| **SSH** | Autenticación y conexión básica. |
+| **Python** | Lo necesario para entender y construir el RAG. |
+| **APIs / JSON** | Consumo, headers, body, respuestas y errores. |
+| **LangChain / LangGraph** | Orquestación de prompts, chains, agentes y tools. |
+| **Embeddings & Bases de Datos Vectoriales** | Indexación, almacenamiento, búsqueda vectorial, híbrida y reranking. |
+| **Chunking** | Segmentación, solapamiento y criterios de recuperación confiable. |
+| **MCPs (creación e integración)** | Servidores propios con FastMCP e integración al agente. |
+| **FastAPI / Docker** | Exposición y despliegue básico del agente. |
+| **Herramientas de archivos y voz** | PDF, DOCX, XLSX, OCR, speech-to-text y text-to-speech. |
+| **Evaluación / Seguridad / Privacidad** | Métricas, validación, guardrails y datos sensibles. |
 
 ## Duración, Modalidad y Precio
 
-- **Duración:** 5 meses
-- **Clases:** Sábados, 3 horas c/u (20 clases x 3 horas = 60 horas presenciales)
+- **Duración:** 3 meses / 12 semanas
+- **Clases:** 24 clases de 2 horas, dos veces por semana (48 horas de cursada)
+- **Autoestudio:** 48 horas (4 horas por semana)
 - **Modalidad:** Curso de Extensión Universitaria
-- **Cupo sugerido:** 10 alumnos (seguimiento personalizado)
+- **Cupo sugerido:** 15 alumnos
 - **Promedio objetivo:** 10 alumnos
 
-**Cálculo económico:**
+**Cálculo económico de referencia:**
 
 | Concepto | Cálculo | Total |
 | :-- | :-- | :-- |
 | **Precio por alumno / mes** | $35.000 ARS | $35.000 ARS |
 | **Promedio de alumnos** | 10 | 10 |
-| **Recaudación mensual** | $35.000 x 10 | $350.000 ARS |
-| **Recaudación total (5 meses)** | $350.000 x 5 | $1.750.000 ARS |
-| **50% para la Institución** | $1.750.000 x 50% | $875.000 ARS |
-| **50% para el docente** | $1.750.000 x 50% | **$875.000 ARS** (ganancia bruta) |
+| **Recaudación mensual** | $35.000 × 10 | $350.000 ARS |
+| **Recaudación total (3 meses)** | $350.000 × 3 | $1.050.000 ARS |
+| **50% para la Institución** | $1.050.000 × 50% | $525.000 ARS |
+| **50% para el docente** | $1.050.000 × 50% | **$525.000 ARS** (ganancia bruta) |
 
+> Los valores son de referencia y quedan sujetos a la definición de la institución.
+
+## Cumplimiento de la Convocatoria
+
+| Requisito | Cumplimiento |
+| :-- | :-- |
+| Máximo 48 horas de teoría | Sí: 24 clases × 2 h = 48 h |
+| 48 horas de autoestudio | Sí: 4 h por semana × 12 semanas |
+| Inicio marzo 2027 | Sí |
+| Formato de 2 h por clase, dos veces por semana | Sí: 12 semanas = 3 meses |
+| Propuesta por correo electrónico | Pendiente de envío |
+| Asunto exacto y adjuntos solo de certificaciones | Pendiente de armado |
+| Redes sociales y minivideo | Pendiente de grabación y enlaces |
 
 ## Conclusión
 
-La fortaleza del curso es **integrar lo justo y necesaria**.
+La fortaleza del curso es **integrar lo justo y necesario**.
 
-Los módulos `00` - `10` son **parte del curso**. No se enseñan por separado, se enseñan con el propósito de armar, entender y configurar la herramienta final.
+Los módulos `00` a `10` son **parte del curso**. No se enseñan por separado, se enseñan con el propósito de armar, entender y configurar la herramienta final.
 
-El alumno sale **con una herramienta funcional**: RAG confiable de conocimiento privado, vinculado al agente, con MCPs propios, configurado con `opencode` CLI, todo por API. Entendiendo lo justo del ecosistema, pero con la suficiente solidez to understand the "¿Por qué?" detrás de cada paso.
+El alumno sale **con una herramienta funcional**: un agente con RAG confiable de conocimiento privado, herramientas propias, servidores MCP y configuración clara. Entiende lo justo del ecosistema, pero con la suficiente solidez para explicar el "por qué" detrás de cada paso.
 
-Este curso **complementa** los talleres existentes, aprovecha la malla ya cursada, responde a una demanda real de pymes, es entendible para todo público and upholds the objetivo: *"Aprende a darle the contexto correcto a un agente de AI with tus propios documents, usando opencode".*
+Este curso **complementa** los talleres existentes, aprovecha la malla ya cursada, responde a una demanda real de pymes y profesionales, es entendible para todo público y sostiene el objetivo: *"Aprendé a darle el contexto correcto a un agente de IA con tus propios documentos, usando herramientas propias y opencode"*.

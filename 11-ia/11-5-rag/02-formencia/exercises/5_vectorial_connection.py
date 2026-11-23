@@ -173,3 +173,56 @@ if __name__ == "__main__":
                 fn_get_one_collection()
             case _:
                 print("\n[⚠️] Opción no válida. Intente de nuevo.")
+
+
+"""
+from qdrant_client import QdrantClient
+from qdrant_client.models import Distance, VectorParams, PointStruct, PayloadSchemaType
+
+client = QdrantClient(url="http://localhost:6333")
+
+client.create_collection(
+    collection_name="politicas_internas",
+    vectors_config=VectorParams(size=384, distance=Distance.COSINE),  # dimensión de MiniLM
+)
+client.create_payload_index("politicas_internas", "source", PayloadSchemaType.KEYWORD)
+client.create_payload_index("politicas_internas", "articulo", PayloadSchemaType.KEYWORD)
+
+point = PointStruct(
+    id=uuid_from_content_hash,          # determinista -> idempotente
+    vector=embedding,                   # lista de floats, dimensión 384
+    payload={
+        "text": chunk_text,             # imprescindible: el vector no es reversible
+        "source": "politica_vacaciones_v3.pdf",
+        "articulo": "7.2",
+        "seccion": "Vacaciones y ausencias",
+        "chunk_index": 14,
+        "doc_id": "pol-vac-2026",
+        "fecha_vigencia": "2026-01-01",
+        "fecha_epoch": 1767225600,      # para filtros de rango
+        "idioma": "es",
+    },
+)
+"""
+
+
+"""Sobre grandes volumenes de datos para ser procesados(ingesta)"""
+"""
+Sobre la herramienta, con X desconocido: Redis + RQ, con N workers configurables. La razón es que puedes escalar añadiendo procesos consumidores sin tocar el código, y ves la profundidad de la cola para saber si necesitas más. Redis aguanta bien miles de jobs al día; el cuello de botella real va a ser la CPU de los embeddings, no el broker.
+
+Un cálculo que te conviene hacer antes de elegir: cuánto tarda un documento medio en pasar por el pipeline completo. Si son 15 segundos y llegan 100 al día, un solo worker va sobrado. Si llegan 100 en una hora punta, necesitas concurrencia. Ese número —documentos por hora en el pico, no por día— es el que dimensiona.
+
+Y la contrapartida que no se puede ignorar: con X variable y workers concurrentes, dos procesos pueden intentar escribir sobre el mismo doc_id a la vez. Si un cliente reenvía un documento mientras el primero aún se está indexando, acabas con chunks mezclados de dos versiones. Se resuelve con un lock por doc_id (Redis SET NX con TTL) o con una restricción de unicidad en la tabla de jobs que impida dos jobs activos para el mismo documento.
+
+Un último punto de arquitectura: si el volumen puede crecer de forma imprevisible, el almacenamiento de los ficheros originales va aparte (S3 o disco compartido), no en el contenedor del worker. Los workers deben ser efímeros y reemplazables; si el PDF vive en su disco local, no puedes escalar horizontalmente y pierdes el original al reiniciar.
+"""
+
+"""
+Si necesitamos una decisión como paso previa a la llamada real
+router = ChatOpenAI(model="modelo-ligero", temperature=0).with_structured_output(
+    Literal["simple", "complejo"]
+)
+tipo = router.invoke(f"Clasifica esta consulta: {query}")
+
+por ejemplo, necesita saber si a consulta que hizo una enfermera es de baja, media o alta complejidad y la salida de esta primero consulta decidira que modelo ejecutara la consulta principal
+"""

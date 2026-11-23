@@ -10,6 +10,7 @@ Este archivo es el **hilo único**. Vas a ir leyendo por concepto, mezclando teo
 - [11-1 - Ejercicios](../11-1-introduccion-llms/ejercicios/01-primera-llamada-api.md)
 - [11-2 - Funcionamiento interno](../11-2-funcionamiento-interno/readme.md)
 - [11-2 - Ejercicios](../11-2-funcionamiento-interno/ejercicios/)
+- [Inferencia local - llama.cpp](../inferencia-local/README.md)
 
 ## 2. Preparación e ingesta de documentos
 - [Formencia - Preparación de documentos](./02-formencia/Sistema%20de%20conocimiento%20privado/0_preparacion_documentos.md)
@@ -19,6 +20,7 @@ Este archivo es el **hilo único**. Vas a ir leyendo por concepto, mezclando teo
 ## 3. Chunking, segmentación y lógica manual
 - [Formencia - Segmentación](./02-formencia/Sistema%20de%20conocimiento%20privado/1_segementation.md)
 - [Práctica - Segmentación completa (sin LangChain)](./02-formencia/exercises/2_segmentartion.py)
+- [Formencia - Introducción al pipeline RAG: chunking, embeddings, reordenamiento y evaluación](./02-formencia/implementacion%20rag/intro.md)
 
 ## 4. Embeddings, vectores y búsqueda vectorial
 - [11-2 - Embeddings y similitud](../11-2-funcionamiento-interno/ejercicios/02-embeddings-y-similitud.md)
@@ -52,6 +54,11 @@ Este archivo es el **hilo único**. Vas a ir leyendo por concepto, mezclando teo
 - [Formencia - Ingeniería de prompts](./02-formencia/Sistema%20de%20conocimiento%20privado/5_prompts_engineering.md)
 - [Formencia - Evaluación de métricas](./02-formencia/Sistema%20de%20conocimiento%20privado/metrics.md)
 - [Formencia - Seguridad](./02-formencia/Sistema%20de%20conocimiento%20privado/security.md)
+- [Formencia - 3 capas de prompting](./02-formencia/implementacion%20rag/prompting.md)
 
 ## 9. Pendientes / Sin clasificar
 Se irán agregando los archivos nuevos de Formencia y Oracle conforme avances. **Sin duplicarlos.** Solo se enlazan.
+
+- [NO_CODE - material inicial del curso no-code (en desarrollo)](../../NO_CODE/)
+- [Agentes - Copilot y agentes empaquetados (en desarrollo)](../../Agentes/copilot/README.md)
+- [Agentes - chat y autocompletado en VS Code (en desarrollo)](../../Agentes/copilot/vsc-chat/README.md)
